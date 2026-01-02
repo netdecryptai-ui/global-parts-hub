@@ -8,7 +8,7 @@ try {
 } catch (e) { phoneDatabase = []; }
 
 export default function Home() {
-  // If database is empty, show a few placeholders so site doesn't look broken
+  // If database is empty, use a placeholder to prevent crashes
   const displayPhones = phoneDatabase.length > 0 ? phoneDatabase : [
     { name: "iPhone 13", slug: "iphone-13", price: "$599", image: "https://m.media-amazon.com/images/I/71GLMJ7TbzL._AC_SL1500_.jpg" },
     { name: "Samsung S24", slug: "samsung-s24", price: "$799", image: "https://m.media-amazon.com/images/I/71Wjsy4PQaL._AC_SL1500_.jpg" }
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* --- BATTLE ARENA SELECTOR (New & Working) --- */}
+      {/* --- BATTLE ARENA SELECTOR --- */}
       <div className="bg-slate-900 py-12 px-4 mb-12">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-black text-white mb-6 uppercase tracking-widest">
@@ -43,7 +43,6 @@ export default function Home() {
             </h2>
             
             <div className="flex flex-wrap justify-center gap-4">
-                {/* Dynamically generate battle links if we have enough phones */}
                 {phoneDatabase.length >= 2 && (
                   <>
                     <Link href={`/versus/${phoneDatabase[0].slug}-vs-${phoneDatabase[1].slug}`} className="bg-white/10 hover:bg-red-600 text-white px-6 py-3 rounded-full font-bold transition border border-white/20">
@@ -63,22 +62,20 @@ export default function Home() {
         </div>
       </div>
 
-      {/* --- TRENDING REPAIRS GRID (REAL DATA) --- */}
+      {/* --- TRENDING REPAIRS GRID --- */}
       <div className="max-w-7xl mx-auto px-6 pb-20">
         <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center">
             <span className="text-orange-500 mr-2">⚡</span> Trending Devices
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {/* THIS MAPS YOUR REAL JSON DATA TO CARDS */}
             {displayPhones.map((item: any, i: number) => (
                 <Link key={i} href={`/product/${item.slug}`} className="border border-slate-100 rounded-2xl p-4 hover:shadow-xl transition bg-white block group">
                     <div className="h-48 bg-white rounded-xl mb-4 overflow-hidden relative flex items-center justify-center p-4">
-                         {/* USES REAL AMAZON IMAGE FROM JSON */}
+                         {/* FIX: Using Proxy to load Amazon Image */}
                          <img 
-                            src={item.image} 
+                            src={`https://wsrv.nl/?url=${encodeURIComponent(item.image)}&w=400&h=400&fit=contain`}
                             alt={item.name} 
-                            referrerPolicy="no-referrer"
                             className="w-auto h-full object-contain group-hover:scale-110 transition duration-500" 
                          />
                     </div>
