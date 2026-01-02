@@ -1,10 +1,15 @@
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
-// 1. IMPORT DATA SAFELY
+// 1. IMPORT DATA SAFELY (Fixed Path)
 let phoneDatabase: any[] = [];
 try {
-  phoneDatabase = require("../../../data/phones.json");
-} catch (e) { phoneDatabase = []; }
+  // Correct path: Go up 2 levels to 'app', then into 'data'
+  phoneDatabase = require("../../data/phones.json");
+} catch (e) { 
+  console.error("DATABASE ERROR:", e);
+  phoneDatabase = []; 
+}
 
 export default async function VersusPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -16,18 +21,34 @@ export default async function VersusPage({ params }: { params: Promise<{ slug: s
   const phoneA = phoneDatabase.find((p: any) => p.slug === slugA);
   const phoneB = phoneDatabase.find((p: any) => p.slug === slugB);
 
-  // ERROR HANDLER
+  // DEBUGGING: If not found, tell the user exactly what went wrong
   if (!phoneA || !phoneB) {
     return (
-        <div className="min-h-screen flex items-center justify-center flex-col bg-slate-50">
-            <h1 className="text-2xl font-bold text-red-500 mb-4">Battle Not Found</h1>
-            <p className="text-slate-600 mb-6">Could not find one of the phones: {slugA} or {slugB}</p>
-            <Link href="/" className="px-6 py-2 bg-blue-600 text-white rounded-lg">Go Home</Link>
+        <div className="min-h-screen flex items-center justify-center flex-col bg-slate-50 p-4">
+            <h1 className="text-3xl font-black text-slate-900 mb-2">Battle Not Found 😕</h1>
+            
+            <div className="bg-red-50 border border-red-200 p-6 rounded-xl max-w-lg text-left">
+                <p className="font-bold text-red-600 mb-2">Diagnostic Report:</p>
+                <ul className="list-disc pl-5 space-y-1 text-sm text-red-800 font-mono">
+                    <li><strong>Database Size:</strong> {phoneDatabase.length} phones loaded.</li>
+                    <li><strong>Looking for Phone A:</strong> {slugA} {phoneA ? "✅ Found" : "❌ NOT FOUND"}</li>
+                    <li><strong>Looking for Phone B:</strong> {slugB} {phoneB ? "✅ Found" : "❌ NOT FOUND"}</li>
+                </ul>
+            </div>
+            
+            <p className="text-slate-500 mt-6 max-w-md text-center">
+                <strong>Tip:</strong> Check your <code>app/data/phones.json</code> file. 
+                Does the "slug" inside the file match exactly matches the name above?
+            </p>
+
+            <Link href="/" className="mt-8 px-6 py-3 bg-slate-900 text-white rounded-lg font-bold hover:bg-slate-800 transition">
+                <ArrowLeft className="inline w-4 h-4 mr-2"/> Back Home
+            </Link>
         </div>
     );
   }
 
-  // RENDER BATTLE
+  // ... (Rest of the render code remains the same) ...
   return (
     <div className="min-h-screen bg-white font-sans pb-20">
       
