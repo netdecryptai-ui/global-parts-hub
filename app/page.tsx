@@ -1,78 +1,55 @@
 import Link from "next/link";
-import { Search, ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans">
+    <div className="min-h-screen bg-white font-sans">
       
-      {/* --- HERO SECTION --- */}
-      <div className="bg-slate-900 text-white pt-20 pb-24 px-4 relative overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="inline-block py-1 px-3 rounded-full bg-blue-500/20 text-blue-300 text-sm font-bold mb-6 border border-blue-500/30">
-            AI-Powered Repair Intelligence
-          </span>
-          <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
-            Fix Anything. <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-              Instantly.
-            </span>
-          </h1>
-          
-          {/* SEARCH BAR */}
-          <div className="relative max-w-2xl mx-auto bg-white rounded-xl shadow-2xl flex items-center p-2">
-            <Search className="h-6 w-6 text-slate-400 ml-4" />
-            <input 
-              type="text" 
-              placeholder="What are you fixing today? (e.g. iPhone 14 Battery)"
-              className="w-full p-4 text-lg text-slate-900 outline-none placeholder:text-slate-400 bg-transparent rounded-xl"
-            />
-            <button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-slate-800 transition">
-              Search
-            </button>
-          </div>
+      {/* --- HERO SECTION (Matches Screenshot) --- */}
+      <div className="text-center pt-24 pb-16 px-4">
+        <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-8 tracking-tight">
+          Find parts for <span className="text-blue-600">any device.</span>
+        </h1>
+        
+        <div className="max-w-xl mx-auto relative">
+           <input 
+             type="text" 
+             placeholder="Type any phone (e.g. 'Pixel 8 Pro Screen')..."
+             className="w-full p-5 rounded-2xl shadow-xl border border-slate-100 outline-none text-lg text-slate-700 placeholder:text-slate-400 focus:ring-2 focus:ring-blue-100 transition"
+           />
         </div>
       </div>
 
-      {/* --- TRENDING NEWS --- */}
-      <div className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-black text-slate-900 mb-8">Trending Tech News</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {["iPhone 16 Leaks", "Samsung S25 Ultra", "Tesla Pi Phone"].map((topic, i) => (
-              <Link key={i} href={`/blog/${topic.replace(/\s+/g, "-").toLowerCase()}`} className="group relative rounded-2xl overflow-hidden aspect-video bg-slate-100">
-                <img src={`https://image.pollinations.ai/prompt/photorealistic%20tech%20news%20${topic}?nologo=true`} alt={topic} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
-                  <h3 className="text-white font-bold text-xl">{topic}</h3>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* --- VERSUS ARENA --- */}
-      <div className="py-20 bg-slate-900 text-white">
-        <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-black mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">VERSUS ARENA</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {["iPhone 15 vs S24", "PS5 vs Xbox Series X", "MacBook vs Dell XPS", "Pixel 9 vs iPhone 16"].map((battle, i) => (
-                <Link key={i} href={`/blog/${battle.replace(/\s+/g, "-").toLowerCase()}-review`} className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-red-500 transition flex justify-between">
-                    <span className="font-bold">{battle}</span>
-                    <ExternalLink className="h-4 w-4 text-slate-500" />
+      {/* --- TRENDING REPAIRS GRID --- */}
+      <div className="max-w-7xl mx-auto px-6 pb-20">
+        <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center">
+            <span className="text-orange-500 mr-2">⚡</span> Trending Repairs
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {/* Static List to Match Screenshot Layout */}
+            {[
+                { name: "iPhone 5s", price: "$69", img: "iphone-5s" },
+                { name: "iPhone 6", price: "$104", img: "iphone-6" },
+                { name: "iPhone 13 Pro", price: "$384", img: "iphone-13-pro" },
+                { name: "iPhone X", price: "$314", img: "iphone-x" },
+                { name: "Samsung S23", price: "$299", img: "samsung-s23" },
+                { name: "Pixel 7 Pro", price: "$189", img: "pixel-7-pro" },
+                { name: "iPad Air 4", price: "$249", img: "ipad-air-4" },
+                { name: "MacBook Air", price: "$499", img: "macbook-air-m1" },
+            ].map((item, i) => (
+                <Link key={i} href={`/product/${item.name.replace(/\s+/g, "-").toLowerCase()}-repair`} className="border border-slate-100 rounded-2xl p-4 hover:shadow-lg transition bg-white block group">
+                    <div className="h-48 bg-slate-50 rounded-xl mb-4 overflow-hidden relative flex items-center justify-center p-4">
+                         {/* Clean Product Image */}
+                         <img 
+                            src={`https://image.pollinations.ai/prompt/photorealistic%20studio%20photo%20of%20${item.name}%20smartphone%20front%20view%20white%20background?nologo=true`} 
+                            alt={item.name} 
+                            className="w-auto h-full object-contain mix-blend-multiply group-hover:scale-105 transition duration-500" 
+                         />
+                    </div>
+                    <h3 className="font-bold text-slate-900 text-lg">{item.name}</h3>
+                    <p className="text-blue-600 font-bold mt-1">{item.price}</p>
                 </Link>
             ))}
-            </div>
-        </div>
-      </div>
-
-      {/* --- SAFE FOOTER (Reduced Links) --- */}
-      <div className="bg-white py-12 border-t border-slate-200">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-            <p className="text-slate-500 mb-4">Popular Repairs</p>
-            <div className="flex justify-center gap-4">
-               <Link href="/product/iphone-13-screen-repair" className="text-blue-600 hover:underline">iPhone 13</Link>
-               <Link href="/product/samsung-s24-battery-repair" className="text-blue-600 hover:underline">Samsung S24</Link>
-            </div>
         </div>
       </div>
 
