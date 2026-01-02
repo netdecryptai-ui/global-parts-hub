@@ -78,6 +78,7 @@ export default function Home() {
                          <img 
                             src={item.image} 
                             alt={item.name} 
+                            referrerPolicy="no-referrer"
                             className="w-auto h-full object-contain group-hover:scale-110 transition duration-500" 
                          />
                     </div>

@@ -71,9 +71,9 @@ export default async function VersusPage({ params }: { params: Promise<{ slug: s
 
            {/* IMAGE ROW */}
            <div className="grid grid-cols-3 p-6 border-b items-center">
-              <img src={phoneA.image} className="w-full h-32 object-contain" alt={phoneA.name} />
+              <img src={phoneA.image}  referrerPolicy="no-referrer" className="w-full h-32 object-contain" alt={phoneA.name} />
               <div className="text-center text-xs font-bold text-slate-300">IMAGES</div>
-              <img src={phoneB.image} className="w-full h-32 object-contain" alt={phoneB.name} />
+              <img src={phoneB.image} referrerPolicy="no-referrer" className="w-full h-32 object-contain" alt={phoneB.name} />
            </div>
 
            {/* DYNAMIC SPECS ROWS */}
