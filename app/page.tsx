@@ -1,17 +1,13 @@
 import Link from "next/link";
 import { Search } from "lucide-react";
-
 // 1. IMPORT DATA
-let phoneDatabase: any[] = [];
-try {
-  phoneDatabase = require("./data/phones.json");
-} catch (e) { phoneDatabase = []; }
+import phoneDatabase from "./data/phones.json";
 
 export default function Home() {
-  const displayPhones = phoneDatabase.length > 0 ? phoneDatabase : [
-    // Fallback if data is missing
-    { name: "iPhone 15", slug: "iphone-15", price: "$999", image: "https://m.media-amazon.com/images/I/71d7rfSl0wL._AC_SX679_.jpg" }
-  ];
+  // 2. CHECK IF DATA IS LOADING
+  // If phoneDatabase is empty, we will see 0 phones. 
+  // We use this variable to debug.
+  console.log("Loaded Phones:", phoneDatabase.length);
 
   return (
     <div className="min-h-screen bg-white font-sans">
@@ -43,18 +39,15 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 pb-20">
         <h2 className="text-xl font-bold text-slate-900 mb-6">⚡ Trending Devices</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {displayPhones.map((item: any, i: number) => (
+            {phoneDatabase.map((item: any, i: number) => (
                 <Link key={i} href={`/product/${item.slug}`} className="border border-slate-100 rounded-2xl p-4 hover:shadow-xl transition bg-white block group">
                     <div className="h-48 bg-white rounded-xl mb-4 overflow-hidden flex items-center justify-center p-4">
-                         
-                         {/* THE MAGIC: Load image through our local API proxy */}
+                         {/* SIMPLE IMAGE TAG - NO PROXY, NO TRICKS */}
                          <img 
-                            src={`/api/image?url=${encodeURIComponent(item.image)}`} 
+                            src={item.image} 
                             alt={item.name} 
                             className="w-auto h-full object-contain group-hover:scale-110 transition duration-500" 
-                            loading="lazy"
                          />
-
                     </div>
                     <h3 className="font-bold text-slate-900 text-lg truncate">{item.name}</h3>
                     <p className="text-blue-600 font-bold mt-1">{item.price}</p>

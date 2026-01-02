@@ -3,7 +3,7 @@
     "slug": "iphone-15-pro-max",
     "name": "iPhone 15 Pro Max",
     "price": "$1,199.00",
-    "image": "https://m.media-amazon.com/images/I/81+h9mcl06L._AC_SL1500_.jpg", 
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/IPhone_15_Pro_Blue_Titanium_mockup.jpg/640px-IPhone_15_Pro_Blue_Titanium_mockup.jpg",
     "amazonLink": "https://www.amazon.com/s?k=iphone+15+pro+max",
     "difficulty": "Hard",
     "specs": { "screen": "6.7 inch", "processor": "A17 Pro", "battery": "4441 mAh" }
@@ -12,9 +12,27 @@
     "slug": "samsung-s24-ultra",
     "name": "Samsung S24 Ultra",
     "price": "$1,299.00",
-    "image": "https://m.media-amazon.com/images/I/71Wjsy4PQaL._AC_SL1500_.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Samsung_Galaxy_S24_Ultra.jpg/640px-Samsung_Galaxy_S24_Ultra.jpg",
     "amazonLink": "https://www.amazon.com/s?k=samsung+s24+ultra",
     "difficulty": "Hard",
     "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 3", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "pixel-8-pro",
+    "name": "Google Pixel 8 Pro",
+    "price": "$999.00",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pixel_8_Pro_Obsidian.jpg/640px-Pixel_8_Pro_Obsidian.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+8+pro",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Tensor G3", "battery": "5050 mAh" }
+  },
+  {
+    "slug": "iphone-13",
+    "name": "iPhone 13",
+    "price": "$599.00",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/IPhone_13_Pro_Silver.jpg/640px-IPhone_13_Pro_Silver.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+13",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "A15 Bionic", "battery": "3240 mAh" }
   }
 ]
