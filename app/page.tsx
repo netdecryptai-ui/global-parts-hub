@@ -40,7 +40,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {["iPhone 16 Leaks", "Samsung S25 Ultra", "Tesla Pi Phone"].map((topic, i) => (
               <Link key={i} href={`/blog/${topic.replace(/\s+/g, "-").toLowerCase()}`} className="group relative rounded-2xl overflow-hidden aspect-video bg-slate-100">
-                <img src={`https://image.pollinations.ai/prompt/tech%20news%20${topic}?nologo=true`} alt={topic} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <img src={`https://image.pollinations.ai/prompt/photorealistic%20tech%20news%20${topic}?nologo=true`} alt={topic} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
                   <h3 className="text-white font-bold text-xl">{topic}</h3>
                 </div>
@@ -65,16 +65,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* --- FOOTER LINKS --- */}
+      {/* --- SAFE FOOTER (Reduced Links) --- */}
       <div className="bg-white py-12 border-t border-slate-200">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
-            {['iPhone 13', 'Samsung S23', 'Pixel 7', 'iPad Air 5', 'PS5 Controller', 'Tesla Screen'].map((item) => (
-               <Link key={item} href={`/product/${item.replace(/\s+/g, "-").toLowerCase()}-repair`} className="text-sm text-slate-500 hover:text-blue-600">
-                 {item} Repair
-               </Link>
-            ))}
-          </div>
+        <div className="max-w-6xl mx-auto px-4 text-center">
+            <p className="text-slate-500 mb-4">Popular Repairs</p>
+            <div className="flex justify-center gap-4">
+               <Link href="/product/iphone-13-screen-repair" className="text-blue-600 hover:underline">iPhone 13</Link>
+               <Link href="/product/samsung-s24-battery-repair" className="text-blue-600 hover:underline">Samsung S24</Link>
+            </div>
         </div>
       </div>
 
