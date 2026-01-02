@@ -1,162 +1,172 @@
 [
-    {
-        "id": 121,
-        "model": "iPhone 5s",
-        "slug": "iphone-5s",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The iPhone 5s is a classic smartphone known for its compact design and advanced features during its release. While it's an older model, it still provides a reliable user experience.",
-        "price_usd": 69,
-        "difficulty": "Medium"
-    },
-    {
-        "id": 122,
-        "model": "iPhone 6",
-        "slug": "iphone-6",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The iPhone 6 is a stylish and capable smartphone with a larger display and improved performance. It introduced new features and design elements, making it a popular choice in its time.",
-        "price_usd": 104,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 123,
-        "model": "iPhone 13 Pro",
-        "slug": "iphone-13-pro",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The iPhone 13 Pro is a cutting-edge smartphone with a powerful camera system, high-performance chip, and stunning display. It offers advanced features for users who demand top-notch technology.",
-        "price_usd": 384,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 124,
-        "model": "iPhone X",
-        "slug": "iphone-x",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The iPhone X is a flagship smartphone featuring a bezel-less OLED display, facial recognition technology (Face ID), and impressive performance. It represents a milestone in iPhone design and innovation.",
-        "price_usd": 314,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 125,
-        "model": "Oppo A57",
-        "slug": "oppo-a57",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Oppo A57 is a mid-range smartphone known for its sleek design and capable features. It offers a balance of performance and affordability, making it a popular choice.",
-        "price_usd": 87,
-        "difficulty": "Medium"
-    },
-    {
-        "id": 126,
-        "model": "Oppo F19 Pro Plus",
-        "slug": "oppo-f19-pro-plus",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Oppo F19 Pro Plus is a feature-rich smartphone with a focus on camera capabilities. It boasts advanced photography features and a powerful performance for a premium user experience.",
-        "price_usd": 139,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 127,
-        "model": "Oppo K1",
-        "slug": "oppo-k1",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Oppo K1 series offers a range of smartphones with various features and specifications. Known for their stylish design and reliable performance, the Oppo K1 series caters to diverse user preferences.",
-        "price_usd": 104,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 128,
-        "model": "Realme C35",
-        "slug": "realme-c35",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Realme C35 is a budget-friendly smartphone with a focus on providing essential features for everyday use. It offers a reliable performance and user-friendly experience.",
-        "price_usd": 52,
-        "difficulty": "Medium"
-    },
-    {
-        "id": 129,
-        "model": "Realme X",
-        "slug": "realme-x",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
-        "price_usd": 104,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 130,
-        "model": "Realme XT",
-        "slug": "realme-xt",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Realme XT is a feature-rich smartphone with a focus on camera technology. It comes equipped with advanced camera sensors, delivering high-quality photos and videos for photography enthusiasts.",
-        "price_usd": 122,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 131,
-        "model": "Samsung Galaxy S7",
-        "slug": "samsung-galaxy-s7",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Samsung Galaxy S7 is a flagship smartphone known for its sleek design and advanced features. It features a high-resolution display, powerful camera, and robust performance.",
-        "price_usd": 104,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 132,
-        "model": "Samsung Galaxy S8",
-        "slug": "samsung-galaxy-s8",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Samsung Galaxy S8 is a premium smartphone with an Infinity Display, offering a stunning visual experience. It boasts advanced camera capabilities and cutting-edge technology.",
-        "price_usd": 174,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 133,
-        "model": "Samsung Galaxy S10",
-        "slug": "samsung-galaxy-s10",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
-        "price_usd": 244,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 134,
-        "model": "Vivo S1",
-        "slug": "vivo-s1",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Vivo S1 is a stylish and mid-range smartphone offering a blend of design and performance. It features a vibrant display, capable camera system, and reliable functionality.",
-        "price_usd": 87,
-        "difficulty": "Medium"
-    },
-    {
-        "id": 135,
-        "model": "Vivo V9",
-        "slug": "vivo-v9",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Vivo V9 is a smartphone known for its sleek design and emphasis on capturing high-quality selfies. It features a notch display, dual-camera setup, and a modern design.",
-        "price_usd": 104,
-        "difficulty": "Hard"
-    },
-    {
-        "id": 136,
-        "model": "Vivo X21",
-        "slug": "vivo-x21",
-        "image": "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/thumbnail.webp",
-        "category": "Smartphone",
-        "description": "The Vivo X21 is a premium smartphone with a focus on cutting-edge technology. It features an in-display fingerprint sensor, a high-resolution display, and advanced camera capabilities.",
-        "price_usd": 174,
-        "difficulty": "Hard"
+  {
+    "slug": "iphone-15-pro-max",
+    "name": "iPhone 15 Pro Max",
+    "price": "$1,199.00",
+    "image": "https://m.media-amazon.com/images/I/81+h9mcl06L._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+15+pro+max&tag=stanley05-20",
+    "difficulty": "Hard",
+    "description": "Titanium design with the A17 Pro chip and 5x Telephoto camera.",
+    "specs": {
+      "screen": "6.7\" Super Retina XDR OLED",
+      "processor": "A17 Pro",
+      "battery": "4441 mAh",
+      "cameras": "48MP Main, 12MP Ultra, 12MP 5x Telephoto",
+      "storage": "256GB / 512GB / 1TB",
+      "releaseYear": "2023"
     }
+  },
+  {
+    "slug": "samsung-s24-ultra",
+    "name": "Samsung Galaxy S24 Ultra",
+    "price": "$1,299.00",
+    "image": "https://m.media-amazon.com/images/I/71Wjsy4PQaL._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s24+ultra&tag=stanley05-20",
+    "difficulty": "Hard",
+    "description": "The ultimate Android experience with Galaxy AI and S-Pen integration.",
+    "specs": {
+      "screen": "6.8\" Dynamic LTPO AMOLED 2X",
+      "processor": "Snapdragon 8 Gen 3 for Galaxy",
+      "battery": "5000 mAh",
+      "cameras": "200MP Main, 50MP Periscope, 12MP Ultra",
+      "storage": "256GB / 512GB / 1TB",
+      "releaseYear": "2024"
+    }
+  },
+  {
+    "slug": "pixel-9-pro",
+    "name": "Google Pixel 9 Pro",
+    "price": "$999.00",
+    "image": "https://m.media-amazon.com/images/I/61bM8fD7uZL._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+9+pro&tag=stanley05-20",
+    "difficulty": "Moderate",
+    "description": "Google's latest flagship featuring advanced Gemini AI integration.",
+    "specs": {
+      "screen": "6.7\" LTPO OLED",
+      "processor": "Google Tensor G4",
+      "battery": "5050 mAh",
+      "cameras": "50MP Main, 48MP Telephoto, 48MP Ultra",
+      "storage": "128GB / 256GB / 512GB",
+      "releaseYear": "2024"
+    }
+  },
+  {
+    "slug": "iphone-13",
+    "name": "iPhone 13",
+    "price": "$599.00",
+    "image": "https://m.media-amazon.com/images/I/71GLMJ7TbzL._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+13&tag=stanley05-20",
+    "difficulty": "Moderate",
+    "description": "The best value iPhone with excellent battery life and A15 chip.",
+    "specs": {
+      "screen": "6.1\" Super Retina XDR OLED",
+      "processor": "A15 Bionic",
+      "battery": "3240 mAh",
+      "cameras": "Dual 12MP System",
+      "storage": "128GB / 256GB / 512GB",
+      "releaseYear": "2021"
+    }
+  },
+  {
+    "slug": "samsung-a54",
+    "name": "Samsung Galaxy A54 5G",
+    "price": "$349.00",
+    "image": "https://m.media-amazon.com/images/I/71aG7-5a+pL._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a54&tag=stanley05-20",
+    "difficulty": "Easy",
+    "description": "Samsung's mid-range king with premium glass back and 120Hz screen.",
+    "specs": {
+      "screen": "6.4\" Super AMOLED 120Hz",
+      "processor": "Exynos 1380",
+      "battery": "5000 mAh",
+      "cameras": "50MP Main, 12MP Ultra, 5MP Macro",
+      "storage": "128GB / 256GB",
+      "releaseYear": "2023"
+    }
+  },
+  {
+    "slug": "nothing-phone-2",
+    "name": "Nothing Phone (2)",
+    "price": "$599.00",
+    "image": "https://m.media-amazon.com/images/I/71cQ1+e0V0L._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=nothing+phone+2&tag=stanley05-20",
+    "difficulty": "Moderate",
+    "description": "Unique transparent design with Glyph Interface lights.",
+    "specs": {
+      "screen": "6.7\" LTPO OLED",
+      "processor": "Snapdragon 8+ Gen 1",
+      "battery": "4700 mAh",
+      "cameras": "Dual 50MP (Main + Ultra)",
+      "storage": "256GB / 512GB",
+      "releaseYear": "2023"
+    }
+  },
+  {
+    "slug": "oneplus-12",
+    "name": "OnePlus 12",
+    "price": "$799.00",
+    "image": "https://m.media-amazon.com/images/I/717JX3fI8XL._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oneplus+12&tag=stanley05-20",
+    "difficulty": "Hard",
+    "description": "Flagship killer with massive battery and ultra-fast charging.",
+    "specs": {
+      "screen": "6.8\" AMOLED ProXDR",
+      "processor": "Snapdragon 8 Gen 3",
+      "battery": "5400 mAh",
+      "cameras": "50MP Main, 64MP Periscope, 48MP Ultra",
+      "storage": "256GB / 512GB",
+      "releaseYear": "2024"
+    }
+  },
+  {
+    "slug": "xiaomi-14-ultra",
+    "name": "Xiaomi 14 Ultra",
+    "price": "$1,099.00",
+    "image": "https://m.media-amazon.com/images/I/71wu9-d1tZL._AC_SL1500_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=xiaomi+14+ultra&tag=stanley05-20",
+    "difficulty": "Hard",
+    "description": "A camera with a phone attached. Leica optics.",
+    "specs": {
+      "screen": "6.73\" LTPO AMOLED",
+      "processor": "Snapdragon 8 Gen 3",
+      "battery": "5000 mAh",
+      "cameras": "Quad 50MP System (Leica)",
+      "storage": "512GB / 1TB",
+      "releaseYear": "2024"
+    }
+  },
+  {
+    "slug": "redmi-note-13-pro",
+    "name": "Redmi Note 13 Pro+",
+    "price": "$399.00",
+    "image": "https://m.media-amazon.com/images/I/51pM3+7b+JL._AC_SL1000_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=redmi+note+13+pro&tag=stanley05-20",
+    "difficulty": "Easy",
+    "description": "200MP camera on a budget with IP68 water resistance.",
+    "specs": {
+      "screen": "6.67\" AMOLED 120Hz",
+      "processor": "Dimensity 7200 Ultra",
+      "battery": "5000 mAh",
+      "cameras": "200MP Main, 8MP Ultra, 2MP Macro",
+      "storage": "256GB / 512GB",
+      "releaseYear": "2024"
+    }
+  },
+  {
+    "slug": "tecno-camon-30",
+    "name": "Tecno Camon 30 Premier",
+    "price": "$450.00",
+    "image": "https://m.media-amazon.com/images/I/61N+R1+D2VL._AC_SL1200_.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=tecno+camon+30&tag=stanley05-20",
+    "difficulty": "Easy",
+    "description": "Stylish leather back design with polarace imaging system.",
+    "specs": {
+      "screen": "6.77\" LTPO AMOLED",
+      "processor": "Dimensity 8200 Ultimate",
+      "battery": "5000 mAh",
+      "cameras": "50MP Main, 50MP Ultra, 50MP Zoom",
+      "storage": "512GB",
+      "releaseYear": "2024"
+    }
+  }
 ]
