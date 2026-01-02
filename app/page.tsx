@@ -18,7 +18,29 @@ export default function Home() {
            />
         </div>
       </div>
-
+{/* --- BATTLE ARENA SELECTOR (New) --- */}
+      <div className="bg-slate-900 py-12 px-4 mb-12">
+        <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl font-black text-white mb-6 uppercase tracking-widest">
+              <span className="text-red-500">Versus</span> Battle Arena
+            </h2>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+                {/* Auto-Generated Battle Links */}
+                <Link href="/versus/iphone-15-pro-max-vs-samsung-s24-ultra" className="bg-white/10 hover:bg-red-600 text-white px-6 py-3 rounded-full font-bold transition border border-white/20">
+                    🔥 iPhone 15 vs S24 Ultra
+                </Link>
+                <Link href="/versus/iphone-13-vs-samsung-a54" className="bg-white/10 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-bold transition border border-white/20">
+                    💰 Budget Battle
+                </Link>
+                <Link href="/versus/pixel-9-pro-vs-oneplus-12" className="bg-white/10 hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transition border border-white/20">
+                    🤖 Android War
+                </Link>
+            </div>
+            <p className="text-slate-500 text-sm mt-4">Select a battle to compare specs and prices instantly.</p>
+        </div>
+      </div>
+      
       {/* --- TRENDING REPAIRS GRID --- */}
       <div className="max-w-7xl mx-auto px-6 pb-20">
         <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center">
