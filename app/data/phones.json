@@ -3,170 +3,18 @@
     "slug": "iphone-15-pro-max",
     "name": "iPhone 15 Pro Max",
     "price": "$1,199.00",
-    "image": "https://m.media-amazon.com/images/I/81+h9mcl06L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=iphone+15+pro+max&tag=stanley05-20",
+    "image": "https://m.media-amazon.com/images/I/81+h9mcl06L._AC_SL1500_.jpg", 
+    "amazonLink": "https://www.amazon.com/s?k=iphone+15+pro+max",
     "difficulty": "Hard",
-    "description": "Titanium design with the A17 Pro chip and 5x Telephoto camera.",
-    "specs": {
-      "screen": "6.7\" Super Retina XDR OLED",
-      "processor": "A17 Pro",
-      "battery": "4441 mAh",
-      "cameras": "48MP Main, 12MP Ultra, 12MP 5x Telephoto",
-      "storage": "256GB / 512GB / 1TB",
-      "releaseYear": "2023"
-    }
+    "specs": { "screen": "6.7 inch", "processor": "A17 Pro", "battery": "4441 mAh" }
   },
   {
     "slug": "samsung-s24-ultra",
-    "name": "Samsung Galaxy S24 Ultra",
+    "name": "Samsung S24 Ultra",
     "price": "$1,299.00",
     "image": "https://m.media-amazon.com/images/I/71Wjsy4PQaL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=samsung+s24+ultra&tag=stanley05-20",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s24+ultra",
     "difficulty": "Hard",
-    "description": "The ultimate Android experience with Galaxy AI and S-Pen integration.",
-    "specs": {
-      "screen": "6.8\" Dynamic LTPO AMOLED 2X",
-      "processor": "Snapdragon 8 Gen 3 for Galaxy",
-      "battery": "5000 mAh",
-      "cameras": "200MP Main, 50MP Periscope, 12MP Ultra",
-      "storage": "256GB / 512GB / 1TB",
-      "releaseYear": "2024"
-    }
-  },
-  {
-    "slug": "pixel-9-pro",
-    "name": "Google Pixel 9 Pro",
-    "price": "$999.00",
-    "image": "https://m.media-amazon.com/images/I/61bM8fD7uZL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=pixel+9+pro&tag=stanley05-20",
-    "difficulty": "Moderate",
-    "description": "Google's latest flagship featuring advanced Gemini AI integration.",
-    "specs": {
-      "screen": "6.7\" LTPO OLED",
-      "processor": "Google Tensor G4",
-      "battery": "5050 mAh",
-      "cameras": "50MP Main, 48MP Telephoto, 48MP Ultra",
-      "storage": "128GB / 256GB / 512GB",
-      "releaseYear": "2024"
-    }
-  },
-  {
-    "slug": "iphone-13",
-    "name": "iPhone 13",
-    "price": "$599.00",
-    "image": "https://m.media-amazon.com/images/I/71GLMJ7TbzL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=iphone+13&tag=stanley05-20",
-    "difficulty": "Moderate",
-    "description": "The best value iPhone with excellent battery life and A15 chip.",
-    "specs": {
-      "screen": "6.1\" Super Retina XDR OLED",
-      "processor": "A15 Bionic",
-      "battery": "3240 mAh",
-      "cameras": "Dual 12MP System",
-      "storage": "128GB / 256GB / 512GB",
-      "releaseYear": "2021"
-    }
-  },
-  {
-    "slug": "samsung-a54",
-    "name": "Samsung Galaxy A54 5G",
-    "price": "$349.00",
-    "image": "https://m.media-amazon.com/images/I/71aG7-5a+pL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=samsung+a54&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Samsung's mid-range king with premium glass back and 120Hz screen.",
-    "specs": {
-      "screen": "6.4\" Super AMOLED 120Hz",
-      "processor": "Exynos 1380",
-      "battery": "5000 mAh",
-      "cameras": "50MP Main, 12MP Ultra, 5MP Macro",
-      "storage": "128GB / 256GB",
-      "releaseYear": "2023"
-    }
-  },
-  {
-    "slug": "nothing-phone-2",
-    "name": "Nothing Phone (2)",
-    "price": "$599.00",
-    "image": "https://m.media-amazon.com/images/I/71cQ1+e0V0L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=nothing+phone+2&tag=stanley05-20",
-    "difficulty": "Moderate",
-    "description": "Unique transparent design with Glyph Interface lights.",
-    "specs": {
-      "screen": "6.7\" LTPO OLED",
-      "processor": "Snapdragon 8+ Gen 1",
-      "battery": "4700 mAh",
-      "cameras": "Dual 50MP (Main + Ultra)",
-      "storage": "256GB / 512GB",
-      "releaseYear": "2023"
-    }
-  },
-  {
-    "slug": "oneplus-12",
-    "name": "OnePlus 12",
-    "price": "$799.00",
-    "image": "https://m.media-amazon.com/images/I/717JX3fI8XL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=oneplus+12&tag=stanley05-20",
-    "difficulty": "Hard",
-    "description": "Flagship killer with massive battery and ultra-fast charging.",
-    "specs": {
-      "screen": "6.8\" AMOLED ProXDR",
-      "processor": "Snapdragon 8 Gen 3",
-      "battery": "5400 mAh",
-      "cameras": "50MP Main, 64MP Periscope, 48MP Ultra",
-      "storage": "256GB / 512GB",
-      "releaseYear": "2024"
-    }
-  },
-  {
-    "slug": "xiaomi-14-ultra",
-    "name": "Xiaomi 14 Ultra",
-    "price": "$1,099.00",
-    "image": "https://m.media-amazon.com/images/I/71wu9-d1tZL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=xiaomi+14+ultra&tag=stanley05-20",
-    "difficulty": "Hard",
-    "description": "A camera with a phone attached. Leica optics.",
-    "specs": {
-      "screen": "6.73\" LTPO AMOLED",
-      "processor": "Snapdragon 8 Gen 3",
-      "battery": "5000 mAh",
-      "cameras": "Quad 50MP System (Leica)",
-      "storage": "512GB / 1TB",
-      "releaseYear": "2024"
-    }
-  },
-  {
-    "slug": "redmi-note-13-pro",
-    "name": "Redmi Note 13 Pro+",
-    "price": "$399.00",
-    "image": "https://m.media-amazon.com/images/I/51pM3+7b+JL._AC_SL1000_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=redmi+note+13+pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "200MP camera on a budget with IP68 water resistance.",
-    "specs": {
-      "screen": "6.67\" AMOLED 120Hz",
-      "processor": "Dimensity 7200 Ultra",
-      "battery": "5000 mAh",
-      "cameras": "200MP Main, 8MP Ultra, 2MP Macro",
-      "storage": "256GB / 512GB",
-      "releaseYear": "2024"
-    }
-  },
-  {
-    "slug": "tecno-camon-30",
-    "name": "Tecno Camon 30 Premier",
-    "price": "$450.00",
-    "image": "https://m.media-amazon.com/images/I/61N+R1+D2VL._AC_SL1200_.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=tecno+camon+30&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Stylish leather back design with polarace imaging system.",
-    "specs": {
-      "screen": "6.77\" LTPO AMOLED",
-      "processor": "Dimensity 8200 Ultimate",
-      "battery": "5000 mAh",
-      "cameras": "50MP Main, 50MP Ultra, 50MP Zoom",
-      "storage": "512GB",
-      "releaseYear": "2024"
-    }
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 3", "battery": "5000 mAh" }
   }
 ]
