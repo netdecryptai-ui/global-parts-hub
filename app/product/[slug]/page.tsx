@@ -19,20 +19,21 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
       const realPhone = phoneDatabase.find((p: any) => p.slug === resolvedParams.slug || resolvedParams.slug.includes(p.slug));
       
       if (realPhone) {
-        // --- NEW PRICING ALGORITHM (Based on Market Research) ---
-        // 1. Extract the raw number (remove $ and commas)
-        const phonePriceRaw = parseInt(realPhone.price.replace(/[^0-9]/g, '')) || 800;
+        // --- FIXED MATH LOGIC ---
+        // Remove $ and commas, KEEP the decimal point
+        const priceString = realPhone.price.replace(/[$,]/g, ""); 
+        const phonePriceRaw = parseFloat(priceString) || 800;
         
-        // 2. Apply the "12% Rule" (Market average for screen replacements)
+        // Apply the "12% Rule"
         let estimatedPartPrice = phonePriceRaw * 0.12;
 
-        // 3. Round to nearest whole number and add .99 for psychological pricing
+        // Round down
         estimatedPartPrice = Math.floor(estimatedPartPrice);
         const finalPartPrice = `$${estimatedPartPrice}.99`;
 
         setData({
           ...realPhone,
-          partPrice: finalPartPrice, // e.g. $144.99 instead of $1,199
+          partPrice: finalPartPrice, 
           title: `${realPhone.name} Replacement Screen & Digitizer`
         });
       } else {
@@ -82,12 +83,12 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
               <p className="text-slate-500 mb-6 text-sm">{data.name} • OEM Grade • Tested</p>
               
               <div className="flex items-baseline gap-3 mb-8">
-                  {/* THE NEW CALCULATED PRICE */}
+                  {/* NEW CALCULATED PRICE */}
                   <div className="text-5xl font-black text-blue-600">{data.partPrice}</div>
                   
-                  {/* FAKE "ORIGINAL" PRICE (Higher Anchor) */}
+                  {/* FAKE "ORIGINAL" PRICE */}
                   <div className="text-lg text-slate-400 line-through decoration-red-400 decoration-2">
-                    ${(parseInt(data.partPrice.replace(/[^0-9]/g, '')) * 1.5 / 100).toFixed(0)}.99
+                    ${(parseInt(data.partPrice.replace(/[^0-9]/g, '')) * 1.5).toFixed(0)}.99
                   </div>
               </div>
               
@@ -102,10 +103,8 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
            </div>
         </div>
 
-        {/* --- SEO BLOG CONTENT (Makes the page long) --- */}
+        {/* --- SEO BLOG CONTENT --- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* SPECS & SAFETY */}
             <div className="md:col-span-1 space-y-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 className="font-black text-slate-900 mb-4 flex items-center">
@@ -124,18 +123,8 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
                         </div>
                     </div>
                 </div>
-
-                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                    <h3 className="font-black text-blue-800 mb-2 flex items-center">
-                        <AlertTriangle className="h-5 w-5 mr-2"/> Tech Tip
-                    </h3>
-                    <p className="text-sm text-blue-700/80 leading-relaxed">
-                        If your touch screen is "ghost touching" but the glass is not broken, you still need to replace the entire assembly (LCD/OLED + Glass).
-                    </p>
-                </div>
             </div>
 
-            {/* LONG DESCRIPTION */}
             <div className="md:col-span-2 bg-white p-8 rounded-xl shadow-sm border border-slate-100 prose prose-slate max-w-none">
                 <h2 className="text-2xl font-black text-slate-900 mb-4">
                     Expert Review: {data.name} Screen Assembly
@@ -170,9 +159,7 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
                     Compatible with Model Numbers: {data.slug.toUpperCase()} (and regional variants).
                 </p>
             </div>
-
         </div>
-
       </div>
     </div>
   );

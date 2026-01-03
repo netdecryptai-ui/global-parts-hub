@@ -1,8 +1,7 @@
-"use client"; // REQUIRED for image error handling
+"use client";
 
 import Link from "next/link";
 import { Search, PenTool } from "lucide-react";
-import { useState } from "react";
 // IMPORT DATA
 import phoneDatabase from "./data/phones.json";
 
@@ -41,10 +40,12 @@ export default function Home() {
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {phoneDatabase.map((item: any, i: number) => {
-                // --- PRICE MATH LOGIC FOR HOMEPAGE ---
-                // 1. Get raw price (e.g. 1000)
-                const rawPrice = parseInt(item.price.replace(/[^0-9]/g, '')) || 500;
-                // 2. Calculate 12% part cost
+                // --- FIXED MATH LOGIC ---
+                // Remove $ and commas, but KEEP the decimal point
+                const priceString = item.price.replace(/[$,]/g, ""); 
+                const rawPrice = parseFloat(priceString) || 500;
+                
+                // Calculate 12% part cost correctly
                 const partPrice = Math.floor(rawPrice * 0.12);
                 
                 return (
@@ -55,7 +56,6 @@ export default function Home() {
                               src={item.image} 
                               alt={item.name} 
                               onError={(e) => {
-                                // If image fails, switch to generic backup instantly
                                 e.currentTarget.src = "https://images.unsplash.com/photo-1598327105666-5b89351aff23?auto=format&fit=crop&w=400&q=80";
                               }}
                               className="w-auto h-full object-contain group-hover:scale-110 transition duration-500" 
