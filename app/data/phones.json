@@ -1,702 +1,452 @@
 [
   {
-    "slug": "apple-iphone-17-pro-max",
-    "name": "Apple iPhone 17 Pro Max",
+    "slug": "iphone-15-pro-max",
+    "name": "iPhone 15 Pro Max",
     "price": "$1,199.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=iPhone+17+Pro+Max&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The 2025 flagship with the A19 Pro chip and a revolutionary completely port-less design.",
-    "specs": {
-      "screen": "6.9 inch Super Retina XDR OLED",
-      "processor": "Apple A19 Pro",
-      "battery": "4852 mAh"
-    }
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+15+pro+max+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "A17 Pro", "battery": "4441 mAh" }
   },
   {
-    "slug": "samsung-galaxy-s25-ultra",
-    "name": "Samsung Galaxy S25 Ultra",
-    "price": "$1,299.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25-ultra.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+S25+Ultra&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The definitive Android experience with next-gen Galaxy AI and Snapdragon 8 Elite.",
-    "specs": {
-      "screen": "6.8 inch Dynamic AMOLED 2X",
-      "processor": "Snapdragon 8 Elite",
-      "battery": "5500 mAh"
-    }
-  },
-  {
-    "slug": "google-pixel-10-pro",
-    "name": "Google Pixel 10 Pro",
-    "price": "$999.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-10-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Google+Pixel+10+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Powered by the fully custom Tensor G5 chip for unmatched AI photography.",
-    "specs": {
-      "screen": "6.7 inch LTPO OLED",
-      "processor": "Google Tensor G5",
-      "battery": "5100 mAh"
-    }
-  },
-  {
-    "slug": "xiaomi-15-ultra",
-    "name": "Xiaomi 15 Ultra",
-    "price": "$1,499.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-15-ultra.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Xiaomi+15+Ultra&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "A camera with a phone attached, featuring a 1-inch main sensor and Leica optics.",
-    "specs": {
-      "screen": "6.73 inch LTPO AMOLED",
-      "processor": "Snapdragon 8 Elite",
-      "battery": "5400 mAh"
-    }
-  },
-  {
-    "slug": "oneplus-13",
-    "name": "OnePlus 13",
-    "price": "$899.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=OnePlus+13&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Blazing fast performance with 100W charging and a refined Hasselblad camera.",
-    "specs": {
-      "screen": "6.82 inch LTPO AMOLED",
-      "processor": "Snapdragon 8 Elite",
-      "battery": "5400 mAh"
-    }
-  },
-  {
-    "slug": "infinix-hot-50-pro-plus",
-    "name": "Infinix Hot 50 Pro+",
-    "price": "$249.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/infinix-hot-50-pro-plus.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Infinix+Hot+50+Pro+Plus&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Incredibly slim 3D-curved design with reliable performance for the price.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 120Hz",
-      "processor": "MediaTek Helio G100",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "tecno-camon-30-premier",
-    "name": "Tecno Camon 30 Premier 5G",
-    "price": "$450.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon-30-premier.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Tecno+Camon+30+Premier&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "A mid-range master with a Sony imaging chip and premium leather back.",
-    "specs": {
-      "screen": "6.77 inch LTPO AMOLED",
-      "processor": "Dimensity 8200 Ultimate",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "samsung-galaxy-a56",
-    "name": "Samsung Galaxy A56",
-    "price": "$499.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a56-5g.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+A56&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The successor to the bestseller, bringing Exynos graphics innovation to the mid-range.",
-    "specs": {
-      "screen": "6.6 inch Super AMOLED",
-      "processor": "Exynos 1580",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "apple-iphone-16",
-    "name": "Apple iPhone 16",
-    "price": "$799.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=iPhone+16&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Introduced the new Capture Button and vertical camera layout for spatial video.",
-    "specs": {
-      "screen": "6.1 inch Super Retina XDR OLED",
-      "processor": "Apple A18",
-      "battery": "3561 mAh"
-    }
-  },
-  {
-    "slug": "google-pixel-9a",
-    "name": "Google Pixel 9a",
-    "price": "$499.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9a.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Google+Pixel+9a&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Google's best AI features and camera tech in an affordable package.",
-    "specs": {
-      "screen": "6.1 inch OLED",
-      "processor": "Google Tensor G4",
-      "battery": "4500 mAh"
-    }
-  },
-  {
-    "slug": "xiaomi-redmi-note-14-pro-plus",
-    "name": "Xiaomi Redmi Note 14 Pro+",
-    "price": "$420.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-pro-plus.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Redmi+Note+14+Pro+Plus&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Flagship-killer specs with IP69 water resistance and a massive battery.",
-    "specs": {
-      "screen": "6.67 inch AMOLED 1.5K",
-      "processor": "Snapdragon 7s Gen 3",
-      "battery": "6200 mAh"
-    }
-  },
-  {
-    "slug": "tecno-spark-30-pro",
-    "name": "Tecno Spark 30 Pro",
-    "price": "$180.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/tecno-spark-30-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Tecno+Spark+30+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Stylish budget phone with a 108MP camera and Transformer-themed editions.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 120Hz",
-      "processor": "Helio G100",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "infinix-zero-40-5g",
-    "name": "Infinix Zero 40 5G",
-    "price": "$399.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/infinix-zero-40-5g.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Infinix+Zero+40+5G&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Designed for vloggers with 4K60 video recording on front and rear cameras.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 144Hz",
-      "processor": "Dimensity 8200 Ultimate",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "samsung-galaxy-z-fold6",
-    "name": "Samsung Galaxy Z Fold6",
-    "price": "$1,899.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold6.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+Z+Fold6&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Lighter, thinner, and wider than ever with Galaxy AI baked in.",
-    "specs": {
-      "screen": "7.6 inch Foldable Dynamic AMOLED 2X",
-      "processor": "Snapdragon 8 Gen 3",
-      "battery": "4400 mAh"
-    }
-  },
-  {
-    "slug": "honor-magic-7-pro",
-    "name": "Honor Magic 7 Pro",
-    "price": "$1,099.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-magic-7-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Honor+Magic+7+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Top-tier photography with a 200MP periscope zoom and stunning display.",
-    "specs": {
-      "screen": "6.8 inch LTPO OLED",
-      "processor": "Snapdragon 8 Elite",
-      "battery": "5850 mAh"
-    }
-  },
-  {
-    "slug": "oppo-find-x8-pro",
-    "name": "Oppo Find X8 Pro",
-    "price": "$1,150.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x8-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Oppo+Find+X8+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Dual periscope cameras and a dedicated camera button define this flagship.",
-    "specs": {
-      "screen": "6.78 inch LTPO AMOLED",
-      "processor": "Dimensity 9400",
-      "battery": "5910 mAh"
-    }
-  },
-  {
-    "slug": "vivo-x200-pro",
-    "name": "Vivo X200 Pro",
-    "price": "$1,100.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x200-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Vivo+X200+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Featuring a massive 200MP Zeiss APO telephoto lens for unmatched zoom.",
-    "specs": {
-      "screen": "6.78 inch LTPO AMOLED",
-      "processor": "Dimensity 9400",
-      "battery": "6000 mAh"
-    }
-  },
-  {
-    "slug": "tecno-phantom-v-fold2",
-    "name": "Tecno Phantom V Fold2",
-    "price": "$1,099.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/tecno-phantom-v-fold2.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Tecno+Phantom+V+Fold2&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The most affordable large-screen foldable with stylus support.",
-    "specs": {
-      "screen": "7.85 inch Foldable LTPO AMOLED",
-      "processor": "Dimensity 9000+",
-      "battery": "5750 mAh"
-    }
-  },
-  {
-    "slug": "realme-gt-7-pro",
-    "name": "Realme GT 7 Pro",
-    "price": "$650.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-7-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Realme+GT+7+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Performance monster with the Snapdragon 8 Elite at a killer price.",
-    "specs": {
-      "screen": "6.78 inch LTPO OLED",
-      "processor": "Snapdragon 8 Elite",
-      "battery": "6500 mAh"
-    }
-  },
-  {
-    "slug": "motorola-razr-50-ultra",
-    "name": "Motorola Razr 50 Ultra",
-    "price": "$999.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-razr-50-ultra.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Motorola+Razr+50+Ultra&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The iconic flip phone returns with a massive, fully functional cover screen.",
-    "specs": {
-      "screen": "6.9 inch Foldable LTPO AMOLED",
-      "processor": "Snapdragon 8s Gen 3",
-      "battery": "4000 mAh"
-    }
-  },
-  {
-    "slug": "nothing-phone-2a",
-    "name": "Nothing Phone (2a)",
-    "price": "$349.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-2a.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Nothing+Phone+2a&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Unique transparent design and Glyph interface on a budget.",
-    "specs": {
-      "screen": "6.7 inch AMOLED",
-      "processor": "Dimensity 7200 Pro",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "samsung-galaxy-s24-fe",
-    "name": "Samsung Galaxy S24 FE",
-    "price": "$649.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-fe.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+S24+FE&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The fan edition that bridges the gap between mid-range and flagship.",
-    "specs": {
-      "screen": "6.7 inch Dynamic AMOLED 2X",
-      "processor": "Exynos 2400e",
-      "battery": "4700 mAh"
-    }
-  },
-  {
-    "slug": "infinix-gt-20-pro",
-    "name": "Infinix GT 20 Pro",
-    "price": "$299.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/infinix-gt-20-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Infinix+GT+20+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "A dedicated gaming phone with mecha design and LED lighting effects.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 144Hz",
-      "processor": "Dimensity 8200 Ultimate",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "tecno-pova-6-pro",
-    "name": "Tecno Pova 6 Pro",
-    "price": "$229.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/tecno-pova-6-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Tecno+Pova+6+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Massive battery and futuristic design for gamers on a budget.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 120Hz",
-      "processor": "Dimensity 6080",
-      "battery": "6000 mAh"
-    }
-  },
-  {
-    "slug": "xiaomi-poco-f6-pro",
-    "name": "Xiaomi Poco F6 Pro",
-    "price": "$499.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f6-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Poco+F6+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Snapdragon 8 Gen 2 power at a mid-range price point.",
-    "specs": {
-      "screen": "6.67 inch AMOLED 120Hz",
-      "processor": "Snapdragon 8 Gen 2",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "apple-iphone-15-pro",
-    "name": "Apple iPhone 15 Pro",
+    "slug": "iphone-15-pro",
+    "name": "iPhone 15 Pro",
     "price": "$999.00",
     "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=iPhone+15+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Titanium design and A17 Pro chip in a compact form factor.",
-    "specs": {
-      "screen": "6.1 inch Super Retina XDR OLED",
-      "processor": "Apple A17 Pro",
-      "battery": "3274 mAh"
-    }
+    "amazonLink": "https://www.amazon.com/s?k=iphone+15+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.1 inch", "processor": "A17 Pro", "battery": "3274 mAh" }
   },
   {
-    "slug": "samsung-galaxy-a16-5g",
-    "name": "Samsung Galaxy A16 5G",
-    "price": "$199.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a16-5g.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+A16+5G&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Six years of update support makes this the best budget investment.",
-    "specs": {
-      "screen": "6.7 inch Super AMOLED",
-      "processor": "Exynos 1330",
-      "battery": "5000 mAh"
-    }
+    "slug": "iphone-15-plus",
+    "name": "iPhone 15 Plus",
+    "price": "$899.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-plus.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+15+plus+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "A16 Bionic", "battery": "4383 mAh" }
   },
   {
-    "slug": "google-pixel-9-pro-fold",
-    "name": "Google Pixel 9 Pro Fold",
-    "price": "$1,799.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9-pro-fold.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Google+Pixel+9+Pro+Fold&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The thinnest foldable with the largest inner display in its class.",
-    "specs": {
-      "screen": "8.0 inch Foldable LTPO OLED",
-      "processor": "Google Tensor G4",
-      "battery": "4650 mAh"
-    }
+    "slug": "iphone-15",
+    "name": "iPhone 15",
+    "price": "$799.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+15+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "A16 Bionic", "battery": "3349 mAh" }
   },
   {
-    "slug": "oneplus-12r",
-    "name": "OnePlus 12R",
-    "price": "$499.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12r.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=OnePlus+12R&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Incredible battery life and flagship screen for under $500.",
-    "specs": {
-      "screen": "6.78 inch LTPO4 AMOLED",
-      "processor": "Snapdragon 8 Gen 2",
-      "battery": "5500 mAh"
-    }
+    "slug": "iphone-14-pro-max",
+    "name": "iPhone 14 Pro Max",
+    "price": "$1,099.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro-max.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+14+pro+max+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "A16 Bionic", "battery": "4323 mAh" }
   },
   {
-    "slug": "honor-200-pro",
-    "name": "Honor 200 Pro",
-    "price": "$600.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-200-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Honor+200+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Studio-level portrait photography co-engineered with Studio Harcourt.",
-    "specs": {
-      "screen": "6.78 inch OLED",
-      "processor": "Snapdragon 8s Gen 3",
-      "battery": "5200 mAh"
-    }
+    "slug": "iphone-14-pro",
+    "name": "iPhone 14 Pro",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+14+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.1 inch", "processor": "A16 Bionic", "battery": "3200 mAh" }
   },
   {
-    "slug": "sony-xperia-1-vi",
-    "name": "Sony Xperia 1 VI",
-    "price": "$1,199.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-1-vi.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Sony+Xperia+1+VI&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "For purists: 3.5mm jack, microSD slot, and a true optical zoom lens.",
-    "specs": {
-      "screen": "6.5 inch LTPO OLED",
-      "processor": "Snapdragon 8 Gen 3",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "asus-rog-phone-9-pro",
-    "name": "Asus ROG Phone 9 Pro",
-    "price": "$1,199.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-9-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Asus+ROG+Phone+9+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The ultimate gaming phone with a 185Hz display and AirTriggers.",
-    "specs": {
-      "screen": "6.78 inch LTPO AMOLED 185Hz",
-      "processor": "Snapdragon 8 Elite",
-      "battery": "5800 mAh"
-    }
-  },
-  {
-    "slug": "xiaomi-14t-pro",
-    "name": "Xiaomi 14T Pro",
+    "slug": "iphone-14",
+    "name": "iPhone 14",
     "price": "$699.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-14t-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Xiaomi+14T+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Leica night photography specialist with a premium metal design.",
-    "specs": {
-      "screen": "6.67 inch AMOLED 144Hz",
-      "processor": "Dimensity 9300+",
-      "battery": "5000 mAh"
-    }
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+14+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "A15 Bionic", "battery": "3279 mAh" }
   },
   {
-    "slug": "motorola-edge-50-pro",
-    "name": "Motorola Edge 50 Pro",
+    "slug": "iphone-13-pro-max",
+    "name": "iPhone 13 Pro Max",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+13+pro+max+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "A15 Bionic", "battery": "4352 mAh" }
+  },
+  {
+    "slug": "iphone-13",
+    "name": "iPhone 13",
     "price": "$599.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-50-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Motorola+Edge+50+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Pantone-validated colors and display for true-to-life visuals.",
-    "specs": {
-      "screen": "6.7 inch P-OLED 144Hz",
-      "processor": "Snapdragon 7 Gen 3",
-      "battery": "4500 mAh"
-    }
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+13+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "A15 Bionic", "battery": "3240 mAh" }
   },
   {
-    "slug": "huawei-pura-70-ultra",
-    "name": "Huawei Pura 70 Ultra",
-    "price": "$1,300.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-pura-70-ultra.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Huawei+Pura+70+Ultra&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Features a retractable camera lens mechanism for a 1-inch sensor.",
-    "specs": {
-      "screen": "6.8 inch LTPO OLED",
-      "processor": "Kirin 9010",
-      "battery": "5200 mAh"
-    }
-  },
-  {
-    "slug": "samsung-galaxy-a35",
-    "name": "Samsung Galaxy A35",
-    "price": "$399.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a35.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+A35&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Premium glass back and security features at an accessible price point.",
-    "specs": {
-      "screen": "6.6 inch Super AMOLED",
-      "processor": "Exynos 1380",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "infinix-note-40-pro-plus",
-    "name": "Infinix Note 40 Pro+",
-    "price": "$300.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/infinix-note-40-pro-plus.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Infinix+Note+40+Pro+Plus&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Supports 100W fast charging and magnetic wireless charging out of the box.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 120Hz",
-      "processor": "Dimensity 7020",
-      "battery": "4600 mAh"
-    }
-  },
-  {
-    "slug": "tecno-camon-30",
-    "name": "Tecno Camon 30",
-    "price": "$250.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon-30-5g.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Tecno+Camon+30&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Brings the classic camera aesthetic to a modern smartphone.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 120Hz",
-      "processor": "Dimensity 7020",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "vivo-v40-pro",
-    "name": "Vivo V40 Pro",
-    "price": "$550.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v40-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Vivo+V40+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Zeiss portrait cameras in an impossibly slim body.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 120Hz",
-      "processor": "Dimensity 9200+",
-      "battery": "5500 mAh"
-    }
-  },
-  {
-    "slug": "oppo-reno12-pro",
-    "name": "Oppo Reno12 Pro",
-    "price": "$500.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno12-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Oppo+Reno12+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Focuses on AI Eraser tools and fluid design for social media creators.",
-    "specs": {
-      "screen": "6.7 inch AMOLED 120Hz",
-      "processor": "Dimensity 7300",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "redmi-13c",
-    "name": "Xiaomi Redmi 13C",
-    "price": "$120.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13c.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Redmi+13C&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The budget king with a smooth 90Hz display and reliable battery.",
-    "specs": {
-      "screen": "6.74 inch IPS LCD",
-      "processor": "Helio G85",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "itel-s24",
-    "name": "Itel S24",
-    "price": "$110.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/itel-s24.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Itel+S24&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Most affordable phone with a 108MP camera sensor.",
-    "specs": {
-      "screen": "6.6 inch IPS LCD 90Hz",
-      "processor": "Helio G91",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "samsung-galaxy-m55",
-    "name": "Samsung Galaxy M55",
-    "price": "$350.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m55.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+M55&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Super slim design with a high-res 50MP selfie camera.",
-    "specs": {
-      "screen": "6.7 inch Super AMOLED+",
-      "processor": "Snapdragon 7 Gen 1",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "poco-x6-pro",
-    "name": "Xiaomi Poco X6 Pro",
-    "price": "$320.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x6-pro.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Poco+X6+Pro&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Unmatched gaming performance in the mid-range segment.",
-    "specs": {
-      "screen": "6.67 inch AMOLED 1.5K",
-      "processor": "Dimensity 8300 Ultra",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "cmf-phone-1",
-    "name": "CMF Phone 1",
-    "price": "$199.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/cmf-phone-1.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=CMF+Phone+1&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Modular design allows you to swap back covers and add accessories.",
-    "specs": {
-      "screen": "6.67 inch Super AMOLED",
-      "processor": "Dimensity 7300",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "honor-x9b",
-    "name": "Honor X9b",
-    "price": "$300.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-x9b.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Honor+X9b&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Known for its ultra-tough anti-drop curved display.",
-    "specs": {
-      "screen": "6.78 inch AMOLED 120Hz",
-      "processor": "Snapdragon 6 Gen 1",
-      "battery": "5800 mAh"
-    }
-  },
-  {
-    "slug": "realme-12-pro-plus",
-    "name": "Realme 12 Pro+",
-    "price": "$360.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Realme+12+Pro+Plus&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Brings a flagship periscope zoom lens to the mid-range market.",
-    "specs": {
-      "screen": "6.7 inch AMOLED 120Hz",
-      "processor": "Snapdragon 7s Gen 2",
-      "battery": "5000 mAh"
-    }
-  },
-  {
-    "slug": "oneplus-nord-4",
-    "name": "OnePlus Nord 4",
-    "price": "$450.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-4.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=OnePlus+Nord+4&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "The only modern 5G phone with a full metal unibody design.",
-    "specs": {
-      "screen": "6.74 inch AMOLED 120Hz",
-      "processor": "Snapdragon 7+ Gen 3",
-      "battery": "5500 mAh"
-    }
-  },
-  {
-    "slug": "google-pixel-8a",
-    "name": "Google Pixel 8a",
+    "slug": "iphone-12",
+    "name": "iPhone 12",
     "price": "$499.00",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8a.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Google+Pixel+8a&tag=stanley05-20",
-    "difficulty": "Easy",
-    "description": "Rounder design and 7 years of updates make it a long-term winner.",
-    "specs": {
-      "screen": "6.1 inch OLED 120Hz",
-      "processor": "Google Tensor G3",
-      "battery": "4492 mAh"
-    }
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+12+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "A14 Bionic", "battery": "2815 mAh" }
   },
   {
-    "slug": "samsung-galaxy-s23",
-    "name": "Samsung Galaxy S23",
-    "price": "$699.99",
-    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-5g.jpg",
-    "amazonLink": "https://www.amazon.com/s?k=Samsung+Galaxy+S23&tag=stanley05-20",
+    "slug": "iphone-11",
+    "name": "iPhone 11",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+11+screen+replacement",
     "difficulty": "Easy",
-    "description": "Compact and powerful, still a great choice for one-handed use.",
-    "specs": {
-      "screen": "6.1 inch Dynamic AMOLED 2X",
-      "processor": "Snapdragon 8 Gen 2",
-      "battery": "3900 mAh"
-    }
+    "specs": { "screen": "6.1 inch", "processor": "A13 Bionic", "battery": "3110 mAh" }
+  },
+  {
+    "slug": "iphone-se-2022",
+    "name": "iPhone SE (2022)",
+    "price": "$429.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-se-2022.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+se+2022+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "4.7 inch", "processor": "A15 Bionic", "battery": "2018 mAh" }
+  },
+  {
+    "slug": "samsung-s24-ultra",
+    "name": "Samsung S24 Ultra",
+    "price": "$1,299.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra-5g-sm-s928.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s24+ultra+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 3", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "samsung-s24-plus",
+    "name": "Samsung S24+",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-plus-5g-sm-s926.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s24+plus+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8 Gen 3", "battery": "4900 mAh" }
+  },
+  {
+    "slug": "samsung-s24",
+    "name": "Samsung S24",
+    "price": "$799.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-5g-sm-s921.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s24+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.2 inch", "processor": "Snapdragon 8 Gen 3", "battery": "4000 mAh" }
+  },
+  {
+    "slug": "samsung-s23-ultra",
+    "name": "Samsung S23 Ultra",
+    "price": "$1,199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s23+ultra+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 2", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "samsung-s23",
+    "name": "Samsung S23",
+    "price": "$699.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s23+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.1 inch", "processor": "Snapdragon 8 Gen 2", "battery": "3900 mAh" }
+  },
+  {
+    "slug": "samsung-z-fold-5",
+    "name": "Samsung Z Fold 5",
+    "price": "$1,799.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold5-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+z+fold+5+inner+screen+replacement",
+    "difficulty": "Expert",
+    "specs": { "screen": "7.6 inch Foldable", "processor": "Snapdragon 8 Gen 2", "battery": "4400 mAh" }
+  },
+  {
+    "slug": "samsung-z-flip-5",
+    "name": "Samsung Z Flip 5",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip5-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+z+flip+5+screen+replacement",
+    "difficulty": "Expert",
+    "specs": { "screen": "6.7 inch Foldable", "processor": "Snapdragon 8 Gen 2", "battery": "3700 mAh" }
+  },
+  {
+    "slug": "samsung-a54",
+    "name": "Samsung Galaxy A54",
+    "price": "$449.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a54.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a54+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.4 inch", "processor": "Exynos 1380", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "samsung-a34",
+    "name": "Samsung Galaxy A34",
+    "price": "$349.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a34.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a34+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.6 inch", "processor": "Dimensity 1080", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "samsung-a14",
+    "name": "Samsung Galaxy A14",
+    "price": "$199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a14-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a14+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.6 inch", "processor": "Exynos 1330", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "pixel-8-pro",
+    "name": "Google Pixel 8 Pro",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+8+pro+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Tensor G3", "battery": "5050 mAh" }
+  },
+  {
+    "slug": "pixel-8",
+    "name": "Google Pixel 8",
+    "price": "$699.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+8+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.2 inch", "processor": "Tensor G3", "battery": "4575 mAh" }
+  },
+  {
+    "slug": "pixel-7-pro",
+    "name": "Google Pixel 7 Pro",
+    "price": "$899.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-7-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+7+pro+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Tensor G2", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "pixel-7",
+    "name": "Google Pixel 7",
+    "price": "$599.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-7.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+7+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.3 inch", "processor": "Tensor G2", "battery": "4355 mAh" }
+  },
+  {
+    "slug": "pixel-7a",
+    "name": "Google Pixel 7a",
+    "price": "$499.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-7a.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+7a+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "Tensor G2", "battery": "4385 mAh" }
+  },
+  {
+    "slug": "pixel-6-pro",
+    "name": "Google Pixel 6 Pro",
+    "price": "$649.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-6-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+6+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "Tensor", "battery": "5003 mAh" }
+  },
+  {
+    "slug": "pixel-6a",
+    "name": "Google Pixel 6a",
+    "price": "$349.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-6a.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+6a+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "Tensor", "battery": "4410 mAh" }
+  },
+  {
+    "slug": "oneplus-12",
+    "name": "OnePlus 12",
+    "price": "$799.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oneplus+12+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 3", "battery": "5400 mAh" }
+  },
+  {
+    "slug": "oneplus-11",
+    "name": "OnePlus 11",
+    "price": "$699.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-11.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oneplus+11+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8 Gen 2", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "oneplus-10-pro",
+    "name": "OnePlus 10 Pro",
+    "price": "$599.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oneplus+10+pro+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8 Gen 1", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "oneplus-nord-n30",
+    "name": "OnePlus Nord N30",
+    "price": "$299.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n30-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oneplus+nord+n30+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 695", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "xiaomi-13-ultra",
+    "name": "Xiaomi 13 Ultra",
+    "price": "$1,199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-ultra.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=xiaomi+13+ultra+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8 Gen 2", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "xiaomi-13-pro",
+    "name": "Xiaomi 13 Pro",
+    "price": "$1,099.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=xiaomi+13+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8 Gen 2", "battery": "4820 mAh" }
+  },
+  {
+    "slug": "xiaomi-13",
+    "name": "Xiaomi 13",
+    "price": "$899.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=xiaomi+13+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.3 inch", "processor": "Snapdragon 8 Gen 2", "battery": "4500 mAh" }
+  },
+  {
+    "slug": "redmi-note-13-pro",
+    "name": "Redmi Note 13 Pro",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=redmi+note+13+pro+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.6 inch", "processor": "Snapdragon 7s Gen 2", "battery": "5100 mAh" }
+  },
+  {
+    "slug": "sony-xperia-1-v",
+    "name": "Sony Xperia 1 V",
+    "price": "$1,399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-1-v.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=sony+xperia+1+v+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.5 inch 4K", "processor": "Snapdragon 8 Gen 2", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "sony-xperia-5-v",
+    "name": "Sony Xperia 5 V",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-5-v.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=sony+xperia+5+v+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.1 inch", "processor": "Snapdragon 8 Gen 2", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "motorola-edge-plus-2023",
+    "name": "Motorola Edge+ (2023)",
+    "price": "$799.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-40-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=motorola+edge+plus+2023+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.6 inch", "processor": "Snapdragon 8 Gen 2", "battery": "5100 mAh" }
+  },
+  {
+    "slug": "motorola-razr-plus",
+    "name": "Motorola Razr+",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-razr-40-ultra.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=motorola+razr+plus+screen+replacement",
+    "difficulty": "Expert",
+    "specs": { "screen": "6.9 inch Foldable", "processor": "Snapdragon 8+ Gen 1", "battery": "3800 mAh" }
+  },
+  {
+    "slug": "asus-rog-phone-8",
+    "name": "ASUS ROG Phone 8",
+    "price": "$1,099.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-8.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=asus+rog+phone+8+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8 Gen 3", "battery": "5500 mAh" }
+  },
+  {
+    "slug": "nothing-phone-2",
+    "name": "Nothing Phone (2)",
+    "price": "$599.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-2.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=nothing+phone+2+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8+ Gen 1", "battery": "4700 mAh" }
+  },
+  {
+    "slug": "huawei-p60-pro",
+    "name": "Huawei P60 Pro",
+    "price": "$1,199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p60-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=huawei+p60+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.6 inch", "processor": "Snapdragon 8+ Gen 1", "battery": "4815 mAh" }
+  },
+  {
+    "slug": "honor-magic5-pro",
+    "name": "Honor Magic5 Pro",
+    "price": "$1,099.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-magic5-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=honor+magic5+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 2", "battery": "5100 mAh" }
+  },
+  {
+    "slug": "realme-gt5",
+    "name": "Realme GT5",
+    "price": "$450.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt5-240w.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=realme+gt5+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 8 Gen 2", "battery": "5240 mAh" }
+  },
+  {
+    "slug": "vivo-x100-pro",
+    "name": "Vivo X100 Pro",
+    "price": "$900.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x100-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=vivo+x100+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.7 inch", "processor": "Dimensity 9300", "battery": "5400 mAh" }
+  },
+  {
+    "slug": "oppo-find-x7-ultra",
+    "name": "Oppo Find X7 Ultra",
+    "price": "$850.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x7-ultra.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oppo+find+x7+ultra+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 3", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "tecno-phantom-v-fold",
+    "name": "Tecno Phantom V Fold",
+    "price": "$1,099.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/tecno-phantom-v-fold.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=tecno+phantom+v+fold+screen+replacement",
+    "difficulty": "Expert",
+    "specs": { "screen": "7.8 inch Foldable", "processor": "Dimensity 9000+", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "infinix-zero-30",
+    "name": "Infinix Zero 30",
+    "price": "$299.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/infinix-zero-30-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=infinix+zero+30+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.7 inch", "processor": "Dimensity 8020", "battery": "5000 mAh" }
   }
 ]

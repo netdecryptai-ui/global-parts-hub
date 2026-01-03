@@ -1,14 +1,12 @@
+"use client"; // REQUIRED for image error handling
+
 import Link from "next/link";
-import { Search } from "lucide-react";
-// 1. IMPORT DATA
+import { Search, PenTool } from "lucide-react";
+import { useState } from "react";
+// IMPORT DATA
 import phoneDatabase from "./data/phones.json";
 
 export default function Home() {
-  // 2. CHECK IF DATA IS LOADING
-  // If phoneDatabase is empty, we will see 0 phones. 
-  // We use this variable to debug.
-  console.log("Loaded Phones:", phoneDatabase.length);
-
   return (
     <div className="min-h-screen bg-white font-sans">
       
@@ -37,22 +35,43 @@ export default function Home() {
 
       {/* TRENDING GRID */}
       <div className="max-w-7xl mx-auto px-6 pb-20">
-        <h2 className="text-xl font-bold text-slate-900 mb-6">⚡ Trending Devices</h2>
+        <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center">
+            <span className="text-orange-500 mr-2">⚡</span> Trending Parts
+        </h2>
+        
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {phoneDatabase.map((item: any, i: number) => (
-                <Link key={i} href={`/product/${item.slug}`} className="border border-slate-100 rounded-2xl p-4 hover:shadow-xl transition bg-white block group">
-                    <div className="h-48 bg-white rounded-xl mb-4 overflow-hidden flex items-center justify-center p-4">
-                         {/* SIMPLE IMAGE TAG - NO PROXY, NO TRICKS */}
-                         <img 
-                            src={item.image} 
-                            alt={item.name} 
-                            className="w-auto h-full object-contain group-hover:scale-110 transition duration-500" 
-                         />
-                    </div>
-                    <h3 className="font-bold text-slate-900 text-lg truncate">{item.name}</h3>
-                    <p className="text-blue-600 font-bold mt-1">{item.price}</p>
-                </Link>
-            ))}
+            {phoneDatabase.map((item: any, i: number) => {
+                // --- PRICE MATH LOGIC FOR HOMEPAGE ---
+                // 1. Get raw price (e.g. 1000)
+                const rawPrice = parseInt(item.price.replace(/[^0-9]/g, '')) || 500;
+                // 2. Calculate 12% part cost
+                const partPrice = Math.floor(rawPrice * 0.12);
+                
+                return (
+                  <Link key={i} href={`/product/${item.slug}`} className="border border-slate-100 rounded-2xl p-4 hover:shadow-xl transition bg-white block group">
+                      <div className="h-48 bg-white rounded-xl mb-4 overflow-hidden flex items-center justify-center p-4 relative">
+                           {/* SMART IMAGE with Fallback */}
+                           <img 
+                              src={item.image} 
+                              alt={item.name} 
+                              onError={(e) => {
+                                // If image fails, switch to generic backup instantly
+                                e.currentTarget.src = "https://images.unsplash.com/photo-1598327105666-5b89351aff23?auto=format&fit=crop&w=400&q=80";
+                              }}
+                              className="w-auto h-full object-contain group-hover:scale-110 transition duration-500" 
+                           />
+                      </div>
+                      <h3 className="font-bold text-slate-900 text-lg truncate">{item.name}</h3>
+                      <div className="flex items-center gap-2 mt-1">
+                          <span className="text-blue-600 font-black text-xl">${partPrice}.99</span>
+                          <span className="text-xs text-slate-400 line-through">${rawPrice}</span>
+                      </div>
+                      <div className="mt-3 text-xs text-green-700 bg-green-50 inline-flex px-2 py-1 rounded font-bold items-center">
+                         <PenTool className="w-3 h-3 mr-1"/> Screen Kit
+                      </div>
+                  </Link>
+                );
+            })}
         </div>
       </div>
     </div>
