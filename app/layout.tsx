@@ -46,8 +46,8 @@ export default function RootLayout({
         <footer className="bg-slate-50 border-t border-slate-200 py-12 mt-auto">
           <div className="max-w-6xl mx-auto px-4 text-center">
             <div className="flex justify-center gap-6 text-sm text-slate-500 mb-6">
-              <Link href="#" className="hover:text-blue-600">Privacy Policy</Link>
-              <Link href="#" className="hover:text-blue-600">Contact</Link>
+             <Link href="/privacy" className="hover:text-blue-600">Privacy Policy</Link>
+             <Link href="/contact" className="hover:text-blue-600">Contact</Link>
               <Link href="/sitemap.xml" className="hover:text-blue-600">Sitemap</Link>
             </div>
             <p className="text-sm text-slate-400">© {new Date().getFullYear()} Global Parts Hub</p>
