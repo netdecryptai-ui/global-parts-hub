@@ -448,5 +448,374 @@
     "amazonLink": "https://www.amazon.com/s?k=infinix+zero+30+screen+replacement",
     "difficulty": "Easy",
     "specs": { "screen": "6.7 inch", "processor": "Dimensity 8020", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "iphone-x",
+    "name": "iPhone X",
+    "price": "$299.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+x+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "5.8 inch", "processor": "A11 Bionic", "battery": "2716 mAh" }
+  },
+  {
+    "slug": "iphone-xr",
+    "name": "iPhone XR",
+    "price": "$349.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+xr+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.1 inch", "processor": "A12 Bionic", "battery": "2942 mAh" }
+  },
+  {
+    "slug": "iphone-xs",
+    "name": "iPhone XS",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-new.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+xs+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "5.8 inch", "processor": "A12 Bionic", "battery": "2658 mAh" }
+  },
+  {
+    "slug": "iphone-xs-max",
+    "name": "iPhone XS Max",
+    "price": "$449.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-max-new1.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+xs+max+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.5 inch", "processor": "A12 Bionic", "battery": "3174 mAh" }
+  },
+  {
+    "slug": "iphone-8",
+    "name": "iPhone 8",
+    "price": "$199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-8-new.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+8+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "4.7 inch", "processor": "A11 Bionic", "battery": "1821 mAh" }
+  },
+  {
+    "slug": "iphone-8-plus",
+    "name": "iPhone 8 Plus",
+    "price": "$249.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-8-plus-new.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+8+plus+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "5.5 inch", "processor": "A11 Bionic", "battery": "2691 mAh" }
+  },
+  {
+    "slug": "samsung-s22-ultra",
+    "name": "Samsung S22 Ultra",
+    "price": "$899.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s22+ultra+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 1", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "samsung-s22-plus",
+    "name": "Samsung S22+",
+    "price": "$699.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-plus-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s22+plus+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.6 inch", "processor": "Snapdragon 8 Gen 1", "battery": "4500 mAh" }
+  },
+  {
+    "slug": "samsung-s22",
+    "name": "Samsung S22",
+    "price": "$599.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s22+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.1 inch", "processor": "Snapdragon 8 Gen 1", "battery": "3700 mAh" }
+  },
+  {
+    "slug": "samsung-s21-ultra",
+    "name": "Samsung S21 Ultra",
+    "price": "$799.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s21+ultra+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 888", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "samsung-s21-fe",
+    "name": "Samsung S21 FE",
+    "price": "$499.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-fe-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s21+fe+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.4 inch", "processor": "Snapdragon 888", "battery": "4500 mAh" }
+  },
+  {
+    "slug": "samsung-s20-fe",
+    "name": "Samsung S20 FE",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-fe-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+s20+fe+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.5 inch", "processor": "Snapdragon 865", "battery": "4500 mAh" }
+  },
+  {
+    "slug": "samsung-a53",
+    "name": "Samsung Galaxy A53",
+    "price": "$349.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a53-5g-.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a53+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.5 inch", "processor": "Exynos 1280", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "samsung-a52s",
+    "name": "Samsung Galaxy A52s",
+    "price": "$299.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a52s-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a52s+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.5 inch", "processor": "Snapdragon 778G", "battery": "4500 mAh" }
+  },
+  {
+    "slug": "samsung-a13",
+    "name": "Samsung Galaxy A13",
+    "price": "$159.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a13.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a13+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.6 inch", "processor": "Exynos 850", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "pixel-5",
+    "name": "Google Pixel 5",
+    "price": "$299.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-5-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+5+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.0 inch", "processor": "Snapdragon 765G", "battery": "4080 mAh" }
+  },
+  {
+    "slug": "pixel-4a-5g",
+    "name": "Google Pixel 4a 5G",
+    "price": "$249.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-4a-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=pixel+4a+5g+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.2 inch", "processor": "Snapdragon 765G", "battery": "3885 mAh" }
+  },
+  {
+    "slug": "oneplus-9-pro",
+    "name": "OnePlus 9 Pro",
+    "price": "$599.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9-pro-.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oneplus+9+pro+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 888", "battery": "4500 mAh" }
+  },
+  {
+    "slug": "oneplus-nord-n200",
+    "name": "OnePlus Nord N200",
+    "price": "$199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n200-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oneplus+nord+n200+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.49 inch", "processor": "Snapdragon 480", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "xiaomi-12t-pro",
+    "name": "Xiaomi 12T Pro",
+    "price": "$649.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-12t-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=xiaomi+12t+pro+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.67 inch", "processor": "Snapdragon 8+ Gen 1", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "poco-f5",
+    "name": "Poco F5",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f5.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=poco+f5+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.67 inch", "processor": "Snapdragon 7+ Gen 2", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "poco-x5-pro",
+    "name": "Poco X5 Pro",
+    "price": "$299.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x5-pro-5g.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=poco+x5+pro+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.67 inch", "processor": "Snapdragon 778G", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "redmi-note-12",
+    "name": "Redmi Note 12",
+    "price": "$199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-4g-1.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=redmi+note+12+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.67 inch", "processor": "Snapdragon 685", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "sony-xperia-1-iv",
+    "name": "Sony Xperia 1 IV",
+    "price": "$999.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-1-iv.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=sony+xperia+1+iv+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.5 inch 4K", "processor": "Snapdragon 8 Gen 1", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "moto-g-power-5g",
+    "name": "Motorola Moto G Power 5G",
+    "price": "$249.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g-power-5g-2023.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=moto+g+power+5g+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.5 inch", "processor": "Dimensity 930", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "moto-edge-30",
+    "name": "Motorola Edge 30",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-30.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=motorola+edge+30+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.5 inch", "processor": "Snapdragon 778G+", "battery": "4020 mAh" }
+  },
+  {
+    "slug": "asus-zenfone-10",
+    "name": "Asus Zenfone 10",
+    "price": "$699.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone10.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=asus+zenfone+10+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "5.9 inch", "processor": "Snapdragon 8 Gen 2", "battery": "4300 mAh" }
+  },
+  {
+    "slug": "redmagic-9-pro",
+    "name": "RedMagic 9 Pro",
+    "price": "$749.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/zte-nubia-red-magic-9-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=redmagic+9+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.8 inch", "processor": "Snapdragon 8 Gen 3", "battery": "6500 mAh" }
+  },
+  {
+    "slug": "honor-90",
+    "name": "Honor 90",
+    "price": "$499.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-90.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=honor+90+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Snapdragon 7 Gen 1", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "honor-x9b",
+    "name": "Honor X9b",
+    "price": "$349.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-x9b.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=honor+x9b+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.78 inch", "processor": "Snapdragon 6 Gen 1", "battery": "5800 mAh" }
+  },
+  {
+    "slug": "realme-11-pro-plus",
+    "name": "Realme 11 Pro+",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-11-pro-plus.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=realme+11+pro+plus+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Dimensity 7050", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "vivo-v29",
+    "name": "Vivo V29",
+    "price": "$449.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v29.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=vivo+v29+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.78 inch", "processor": "Snapdragon 778G", "battery": "4600 mAh" }
+  },
+  {
+    "slug": "oppo-reno-10",
+    "name": "Oppo Reno 10",
+    "price": "$399.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno10-international.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=oppo+reno+10+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.7 inch", "processor": "Dimensity 7050", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "huawei-mate-50-pro",
+    "name": "Huawei Mate 50 Pro",
+    "price": "$899.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=huawei+mate+50+pro+screen+replacement",
+    "difficulty": "Hard",
+    "specs": { "screen": "6.74 inch", "processor": "Snapdragon 8+ Gen 1", "battery": "4700 mAh" }
+  },
+  {
+    "slug": "nokia-xr21",
+    "name": "Nokia XR21",
+    "price": "$499.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/nokia-xr21.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=nokia+xr21+screen+replacement",
+    "difficulty": "Moderate",
+    "specs": { "screen": "6.49 inch", "processor": "Snapdragon 695", "battery": "4800 mAh" }
+  },
+  {
+    "slug": "fairphone-5",
+    "name": "Fairphone 5",
+    "price": "$699.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/fairphone-5.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=fairphone+5+screen+replacement",
+    "difficulty": "Very Easy",
+    "specs": { "screen": "6.46 inch", "processor": "QCM6490", "battery": "4200 mAh" }
+  },
+  {
+    "slug": "infinix-note-30",
+    "name": "Infinix Note 30",
+    "price": "$199.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/infinix-note-30.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=infinix+note+30+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.78 inch", "processor": "Helio G99", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "tecno-camon-20",
+    "name": "Tecno Camon 20",
+    "price": "$229.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon20-pro.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=tecno+camon+20+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.67 inch", "processor": "Helio G85", "battery": "5000 mAh" }
+  },
+  {
+    "slug": "iphone-7",
+    "name": "iPhone 7",
+    "price": "$149.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-7r.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+7+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "4.7 inch", "processor": "A10 Fusion", "battery": "1960 mAh" }
+  },
+  {
+    "slug": "iphone-7-plus",
+    "name": "iPhone 7 Plus",
+    "price": "$189.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-7-plus-r.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=iphone+7+plus+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "5.5 inch", "processor": "A10 Fusion", "battery": "2900 mAh" }
+  },
+  {
+    "slug": "samsung-a12",
+    "name": "Samsung Galaxy A12",
+    "price": "$130.00",
+    "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a12-sm-a125.jpg",
+    "amazonLink": "https://www.amazon.com/s?k=samsung+a12+screen+replacement",
+    "difficulty": "Easy",
+    "specs": { "screen": "6.5 inch", "processor": "Helio P35", "battery": "5000 mAh" }
   }
 ]
