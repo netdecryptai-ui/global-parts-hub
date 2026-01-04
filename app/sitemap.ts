@@ -1,53 +1,45 @@
-import { MetadataRoute } from 'next'
-
-// 1. IMPORT DATA SAFELY
-let phoneDatabase: any[] = [];
-try {
-  // We use the same data file as your pages
-  phoneDatabase = require("./data/phones.json");
-} catch (e) { phoneDatabase = []; }
+import { MetadataRoute } from 'next';
+// @ts-ignore
+import phoneDatabase from './data/phones.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://global-parts-hub.vercel.app'; // Your Live URL
+  const baseUrl = 'https://global-parts-hub.vercel.app'; // Your live domain
 
-  // 1. STATIC PAGES (Home, Privacy, Contact)
-  const staticRoutes = [
-    '',
-    '/blog/privacy-policy',
-    '/blog/contact-us',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: 1.0,
-  }));
-
-  // 2. PRODUCT PAGES (Review Pages for each phone)
-  const productRoutes = phoneDatabase.map((phone) => ({
+  // 1. Generate URLs for all 50 Product Pages
+  // @ts-ignore
+  const productUrls = phoneDatabase.map((phone) => ({
     url: `${baseUrl}/product/${phone.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
 
-  // 3. VERSUS PAGES (The Money Maker)
-  // Logic: Loop through every phone and compare it to every OTHER phone
-  let versusRoutes: any[] = [];
-  
-  phoneDatabase.forEach((phoneA, index) => {
-    phoneDatabase.forEach((phoneB, subIndex) => {
-      // Avoid comparing phone to itself OR duplicates (A vs B is same as B vs A)
-      if (index < subIndex) {
-        versusRoutes.push({
-          url: `${baseUrl}/versus/${phoneA.slug}-vs-${phoneB.slug}`,
-          lastModified: new Date(),
-          changeFrequency: 'monthly' as const,
-          priority: 0.7,
-        });
-      }
-    });
-  });
+  // 2. Generate URLs for Versus Battles (The "Infinite Content" Engine)
+  // This loop pairs every phone with every other phone (approx 1,200 combinations)
+  const versusUrls = [];
+  // @ts-ignore
+  for (let i = 0; i < phoneDatabase.length; i++) {
+    // @ts-ignore
+    for (let j = i + 1; j < phoneDatabase.length; j++) {
+      versusUrls.push({
+        // @ts-ignore
+        url: `${baseUrl}/versus/${phoneDatabase[i].slug}-vs-${phoneDatabase[j].slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.5,
+      });
+    }
+  }
 
-  // Combine everything into one giant list for Google
-  return [...staticRoutes, ...productRoutes, ...versusRoutes];
+  // 3. Return the full map to Google
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'daily' as const,
+      priority: 1,
+    },
+    ...productUrls,
+    ...versusUrls,
+  ];
 }
