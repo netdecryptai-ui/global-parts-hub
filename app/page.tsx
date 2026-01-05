@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Search, PenTool, X } from "lucide-react"; 
+import { Search, PenTool, X, Wrench, Zap } from "lucide-react"; 
 import { useState } from "react";
 // IMPORT DATA
 import phoneDatabase from "./data/phones.json";
@@ -9,42 +9,44 @@ import phoneDatabase from "./data/phones.json";
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // SAFETY: Ensure database exists before filtering
   // @ts-ignore
   const safeDatabase = phoneDatabase || [];
   
-  // FILTER LOGIC
   const filteredPhones = safeDatabase.filter((phone: any) => 
     phone.name && phone.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-slate-50 font-sans">
       
-      {/* HERO SECTION */}
-      <div className="text-center pt-24 pb-16 px-4 bg-slate-50 border-b border-slate-200">
-        <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-8">
-          Find parts for <span className="text-blue-600">any device.</span>
+      {/* HERO SECTION - Darker & Professional */}
+      <div className="text-center pt-20 pb-16 px-4 bg-white border-b border-slate-200">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-bold mb-6 uppercase tracking-wider">
+            <Wrench className="w-3 h-3" /> DIY Repair Database
+        </div>
+        <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">
+          Fix your <span className="text-orange-600 underline decoration-4 decoration-orange-200 underline-offset-4">own device.</span>
         </h1>
+        <p className="text-slate-500 text-lg mb-8 max-w-2xl mx-auto">
+            Compare OEM screen & battery prices instantly. Don't overpay at the repair shop.
+        </p>
         
-        {/* SEARCH BAR */}
-        <div className="max-w-xl mx-auto relative">
-           <Search className="absolute left-4 top-5 h-6 w-6 text-slate-400" />
+        {/* SEARCH BAR - Orange Focus */}
+        <div className="max-w-xl mx-auto relative group">
+           <Search className="absolute left-5 top-5 h-6 w-6 text-slate-400 group-focus-within:text-orange-500 transition" />
            <input 
              type="text" 
-             placeholder="Search your phone (e.g. 'Pixel 8')..." 
-             className="w-full p-5 pl-12 rounded-2xl shadow-xl border border-slate-200 text-lg outline-none focus:ring-4 focus:ring-blue-100 transition"
+             placeholder="Search model (e.g. 'iPhone 13' or 'S24')..." 
+             className="w-full p-5 pl-14 rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-200 text-lg outline-none focus:ring-4 focus:ring-orange-100 focus:border-orange-500 transition"
              value={searchTerm}
              onChange={(e) => setSearchTerm(e.target.value)}
            />
-           
-           {/* THE FIX: Added type AND aria-label to satisfy the red line */}
            {searchTerm && (
              <button 
                type="button" 
                aria-label="Clear Search"
                onClick={() => setSearchTerm("")}
-               className="absolute right-4 top-5 text-slate-400 hover:text-slate-600"
+               className="absolute right-5 top-5 text-slate-300 hover:text-slate-600"
              >
                <X className="h-6 w-6" />
              </button>
@@ -52,56 +54,59 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BATTLE ARENA (Hidden when searching) */}
+      {/* BATTLE ARENA */}
       {!searchTerm && (
-        <div className="bg-slate-900 py-12 px-4 mb-12 text-center">
-          <h2 className="text-2xl font-black text-white mb-6 uppercase tracking-widest"><span className="text-red-500">Versus</span> Battle Arena</h2>
+        <div className="bg-slate-900 py-10 px-4 mb-12 text-center border-y border-slate-800">
+          <h2 className="text-xl font-bold text-white mb-6 uppercase tracking-widest flex items-center justify-center gap-2">
+            <Zap className="w-5 h-5 text-yellow-400 fill-yellow-400" /> Price Wars
+          </h2>
           <div className="flex flex-wrap justify-center gap-4">
               {safeDatabase.length >= 2 ? (
-                  <Link href={`/versus/${safeDatabase[0].slug}-vs-${safeDatabase[1].slug}`} className="bg-white/10 hover:bg-red-600 text-white px-6 py-3 rounded-full font-bold transition border border-white/20">
-                      🔥 {safeDatabase[0].name} vs {safeDatabase[1].name}
+                  <Link href={`/versus/${safeDatabase[0].slug}-vs-${safeDatabase[1].slug}`} className="bg-white/5 hover:bg-orange-600 text-slate-300 hover:text-white px-6 py-3 rounded-xl font-bold transition border border-white/10 hover:border-orange-500">
+                      Compare: {safeDatabase[0].name} vs {safeDatabase[1].name}
                   </Link>
-              ) : <span className="text-slate-500">Add more phones to enable battles</span>}
+              ) : null}
           </div>
         </div>
       )}
 
-      {/* TRENDING GRID */}
+      {/* GRID */}
       <div className="max-w-7xl mx-auto px-6 pb-20">
-        <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center mt-8">
-            <span className="text-orange-500 mr-2">⚡</span> {searchTerm ? `Results for "${searchTerm}"` : "Trending Parts"}
+        <h2 className="text-xl font-black text-slate-900 mb-6 flex items-center mt-8">
+            {searchTerm ? `Results for "${searchTerm}"` : "Popular Replacement Parts"}
         </h2>
         
         {filteredPhones.length === 0 ? (
-          <div className="text-center py-20 text-slate-400">
-            <p className="text-xl font-bold">No phones found.</p>
-            <p>Try searching for "iPhone", "Samsung", or "Pixel".</p>
+          <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-slate-300">
+            <p className="text-xl font-bold text-slate-400">No parts found.</p>
+            <p className="text-slate-400">Try searching for a simpler model name.</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {filteredPhones.map((item: any, i: number) => {
-                  // PRICE MATH (Safe Version)
                   const priceString = item.price ? item.price.replace(/[$,]/g, "") : "0"; 
                   const rawPrice = parseFloat(priceString) || 500;
                   const partPrice = Math.floor(rawPrice * 0.12);
                   
                   return (
-                    <Link key={i} href={`/product/${item.slug}`} className="border border-slate-100 rounded-2xl p-4 hover:shadow-xl transition bg-white block group">
-                        <div className="h-48 bg-white rounded-xl mb-4 overflow-hidden flex items-center justify-center p-4 relative">
+                    <Link key={i} href={`/product/${item.slug}`} className="border border-slate-200 rounded-xl p-4 hover:shadow-xl hover:shadow-orange-500/10 hover:border-orange-200 transition bg-white block group relative overflow-hidden">
+                        <div className="h-48 bg-slate-50 rounded-lg mb-4 overflow-hidden flex items-center justify-center p-4 relative">
                             <img 
                                 src={item.image} 
                                 alt={item.name} 
                                 onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1598327105666-5b89351aff23?auto=format&fit=crop&w=400&q=80"; }}
-                                className="w-auto h-full object-contain group-hover:scale-110 transition duration-500" 
+                                className="w-auto h-full object-contain mix-blend-multiply group-hover:scale-110 transition duration-500" 
                             />
                         </div>
                         <h3 className="font-bold text-slate-900 text-lg truncate">{item.name}</h3>
                         <div className="flex items-center gap-2 mt-1">
-                            <span className="text-blue-600 font-black text-xl">${partPrice}.99</span>
-                            <span className="text-xs text-slate-400 line-through">${rawPrice}</span>
+                            <span className="text-orange-600 font-black text-xl">${partPrice}.99</span>
+                            <span className="text-xs text-slate-400 font-medium">Est. Part Cost</span>
                         </div>
-                        <div className="mt-3 text-xs text-green-700 bg-green-50 inline-flex px-2 py-1 rounded font-bold items-center">
-                          <PenTool className="w-3 h-3 mr-1"/> Screen Kit
+                        
+                        {/* Fake "Low Stock" Badge for urgency */}
+                        <div className="absolute top-3 right-3 bg-red-50 text-red-600 text-[10px] font-bold px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+                            LOW STOCK
                         </div>
                     </Link>
                   );
