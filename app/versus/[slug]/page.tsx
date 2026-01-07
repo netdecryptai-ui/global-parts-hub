@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { ArrowLeft, Trophy, X, Check, Zap, ShoppingCart } from "lucide-react";
+import { ArrowLeft, Trophy, Zap } from "lucide-react";
 import type { Metadata } from "next";
 // @ts-ignore
-import phoneDatabase from "../../../data/phones.json";
+import phoneDatabase from "../../data/phones.json"; // ✅ FIXED IMPORT PATH
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -12,19 +12,25 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const parts = slug.split("-vs-");
+  
+  // Safety Check: If URL is broken, fallback to generic title
+  if (parts.length < 2) {
+    return { title: "Phone Repair Comparison | Global Parts Hub" };
+  }
+
   const name1 = parts[0].replace(/-/g, " ");
   const name2 = parts[1].replace(/-/g, " ");
 
   return {
     title: `${name1} vs ${name2} Repair Cost Comparison`,
-    description: `Which is cheaper to fix? Compare screen replacement prices for ${name1} and ${name2}. See part costs, difficulty, and specs.`,
+    description: `Which is cheaper to fix? Compare screen replacement prices for ${name1} and ${name2}.`,
   };
 }
 
 export default async function VersusPage({ params }: Props) {
   const { slug } = await params;
   
-  // Parse the URL (e.g., "iphone-13-vs-pixel-7")
+  // Parse the URL
   const parts = slug.split("-vs-");
   if (parts.length !== 2) return <div>Invalid Comparison</div>;
 
