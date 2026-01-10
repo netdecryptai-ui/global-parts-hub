@@ -39,16 +39,33 @@ export default async function ProductPage({ params }: Props) {
     );
   }
 
-  // --- SAFE MATH & LINKS ---
+  // --- 💰 MONETIZATION & LINKS ENGINE 💰 ---
+  // 👇 REPLACE THESE WITH YOUR REAL IDS!
+  const AMAZON_TAG = "your-store-20"; 
+  const ALI_ID = "your-ali-id";       
+
+  // Safe Math
   const priceString = data.price ? String(data.price).replace(/[$,]/g, "") : "0"; 
   const phonePriceRaw = parseFloat(priceString) || 800;
   const amazonPrice = Math.floor(phonePriceRaw * 0.12);
   const aliPrice = Math.floor(amazonPrice * 0.60);
   
+  // Safe Name for Search
   const safeName = data.name ? data.name.replace(/ /g, "+") : "phone";
-  const aliLink = `https://www.aliexpress.com/wholesale?SearchText=${safeName}+screen+replacement`;
+
+  // 1. AliExpress Link (Monetized)
+  const aliLink = `https://www.aliexpress.com/wholesale?SearchText=${safeName}+screen+replacement&catId=0&initiative_id=SB_2025&aff_fcid=${ALI_ID}`;
+  
+  // 2. YouTube Link
   const youtubeSearch = `https://www.youtube.com/results?search_query=${safeName}+screen+replacement+guide`;
-  const amazonLinkSafe = data.amazonLink || "https://www.amazon.com";
+  
+  // 3. Amazon Link (Monetized)
+  // If we have a direct link in JSON, use it. If not, search for it. Then append the tag.
+  let baseAmazonLink = data.amazonLink || `https://www.amazon.com/s?k=${safeName}+screen+replacement`;
+  
+  // Check if link already has a '?' to know whether to add '&tag=' or '?tag='
+  const separator = baseAmazonLink.includes("?") ? "&" : "?";
+  const amazonLinkSafe = `${baseAmazonLink}${separator}tag=${AMAZON_TAG}`;
 
   // --- RELATED PARTS LOGIC ---
   const currentBrand = data.name ? data.name.split(" ")[0] : "Apple";
@@ -109,7 +126,7 @@ export default async function ProductPage({ params }: Props) {
                         </div>
                         <div className="font-bold text-slate-400">Amazon</div>
                     </div>
-                    <a href={amazonLinkSafe} target="_blank" className="w-full bg-[#FF9900] hover:bg-[#ffad33] text-white font-black text-lg py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-orange-200 transition transform active:scale-95">
+                    <a href={amazonLinkSafe} target="_blank" rel="noopener noreferrer" className="w-full bg-[#FF9900] hover:bg-[#ffad33] text-white font-black text-lg py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-orange-200 transition transform active:scale-95">
                         <ShoppingCart className="h-5 w-5" /> Check Price on Amazon
                     </a>
                   </div>
@@ -123,7 +140,7 @@ export default async function ProductPage({ params }: Props) {
                         </div>
                         <span className="font-bold text-slate-400 text-sm">AliExpress</span>
                      </div>
-                     <a href={aliLink} target="_blank" className="w-full bg-white border-2 border-slate-100 hover:border-red-500 hover:text-red-600 text-slate-600 font-bold text-lg py-3 rounded-xl flex items-center justify-center gap-2 transition">
+                     <a href={aliLink} target="_blank" rel="noopener noreferrer" className="w-full bg-white border-2 border-slate-100 hover:border-red-500 hover:text-red-600 text-slate-600 font-bold text-lg py-3 rounded-xl flex items-center justify-center gap-2 transition">
                         <Globe className="h-5 w-5" /> View Budget Deal
                     </a>
                   </div>
@@ -144,7 +161,7 @@ export default async function ProductPage({ params }: Props) {
                         {data.specs && Object.keys(data.specs).map((key: string) => (
                             <div key={key} className="flex justify-between border-b border-slate-50 pb-2">
                                 <span className="text-slate-400 capitalize">{key}</span>
-                                {/* THE FIX IS BELOW: Using (as any) to satisfy TypeScript */}
+                                {/* Fix for TypeScript index error */}
                                 <span className="font-bold text-slate-700 text-right">
                                     {(data.specs as any)[key]}
                                 </span>
@@ -153,12 +170,12 @@ export default async function ProductPage({ params }: Props) {
                     </div>
                 </div>
 
-                {/* FEATURE 2: VIDEO LINK CARD */}
+                {/* VIDEO LINK CARD */}
                 <div className="bg-slate-900 text-white p-6 rounded-2xl shadow-lg relative overflow-hidden group">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-red-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition"></div>
                     <h3 className="font-bold text-lg mb-2 flex items-center"><Youtube className="mr-2 text-red-500" /> Need Help?</h3>
                     <p className="text-slate-400 text-sm mb-4">Watch a step-by-step teardown guide for the {data.name} before you buy.</p>
-                    <a href={youtubeSearch} target="_blank" className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition text-sm">
+                    <a href={youtubeSearch} target="_blank" rel="noopener noreferrer" className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition text-sm">
                         Watch Tutorials on YouTube
                     </a>
                 </div>
@@ -189,7 +206,7 @@ export default async function ProductPage({ params }: Props) {
             </div>
         </div>
 
-        {/* --- FEATURE 3: RELATED PARTS --- */}
+        {/* --- RELATED PARTS --- */}
         {relatedPhones.length > 0 && (
             <div className="border-t border-slate-200 pt-12">
                 <h3 className="text-xl font-black text-slate-900 mb-6">Other {currentBrand} Parts</h3>
