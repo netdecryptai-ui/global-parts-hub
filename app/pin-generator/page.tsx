@@ -2,35 +2,41 @@
 "use client";
 
 import { useState, useRef } from "react";
-// We use ../../ because we are deep in app/pin-generator/
-import phoneDatabase from "../../data/phones.json"; 
-import { RefreshCw } from "lucide-react";
+import { RefreshCw, Download } from "lucide-react";
+
+// 1. EMBEDDED DATA (Fixes the import error)
+const PHONES = [
+  { name: "iPhone 13", price: "$149.99", image: "https://m.media-amazon.com/images/I/61l9ppRIiqL._AC_SX679_.jpg" },
+  { name: "iPhone 14", price: "$189.99", image: "https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_SX679_.jpg" },
+  { name: "Samsung S22", price: "$159.99", image: "https://m.media-amazon.com/images/I/61U+rn12W+L._AC_SX679_.jpg" },
+  { name: "Samsung S23", price: "$199.99", image: "https://m.media-amazon.com/images/I/71oxr1R+C+L._AC_SX679_.jpg" },
+  { name: "Pixel 7", price: "$129.99", image: "https://m.media-amazon.com/images/I/61N9DS+gWkL._AC_SX679_.jpg" },
+  { name: "Pixel 6", price: "$99.99", image: "https://m.media-amazon.com/images/I/61oQTjPgQML._AC_SX679_.jpg" }
+];
 
 export default function PinGenerator() {
   const [p1Index, setP1Index] = useState(0);
   const [p2Index, setP2Index] = useState(1);
   const pinRef = useRef(null);
 
-  // Fallback if database is empty
-  const phones = Array.isArray(phoneDatabase) ? phoneDatabase : [];
-
-  // 1. GENERATE OPTIONS (Saved in a variable to prevent HTML errors)
-  const phoneOptions = phones.map((p, i) => (
+  // 2. GENERATE OPTIONS
+  const phoneOptions = PHONES.map((p, i) => (
     <option key={i} value={i}>
       {p.name}
     </option>
   ));
 
-  // 2. SAFE SELECTION
-  const p1 = phones[p1Index] || { name: "Loading...", price: "$0", image: "" };
-  const p2 = phones[p2Index] || { name: "Loading...", price: "$0", image: "" };
+  // 3. SAFE SELECTION
+  const p1 = PHONES[p1Index];
+  const p2 = PHONES[p2Index];
 
-  // 3. PRICE MATH
+  // 4. PRICE MATH
   const getPrice = (p) => {
     if (!p || !p.price) return 0;
     const cleanString = String(p.price).replace(/[$,]/g, "");
     const rawPrice = parseFloat(cleanString) || 0;
-    return Math.floor(rawPrice * 0.12);
+    // Screen cost is roughly 40-50% of the part price for DIY kits
+    return Math.floor(rawPrice * 0.80); 
   };
 
   const c1 = getPrice(p1);
@@ -39,10 +45,8 @@ export default function PinGenerator() {
   const winner = c1 < c2 ? p1 : p2;
 
   const randomize = () => {
-    if (phones.length > 0) {
-      setP1Index(Math.floor(Math.random() * phones.length));
-      setP2Index(Math.floor(Math.random() * phones.length));
-    }
+    setP1Index(Math.floor(Math.random() * PHONES.length));
+    setP2Index(Math.floor(Math.random() * PHONES.length));
   };
 
   return (
@@ -113,7 +117,7 @@ export default function PinGenerator() {
                 {/* LEFT PHONE */}
                 <div className={`w-1/2 flex flex-col items-center justify-center p-4 ${winner === p1 ? 'bg-green-50/50' : ''}`}>
                     <img 
-                        src={p1.image || "https://placehold.co/200"} 
+                        src={p1.image} 
                         alt={p1.name}
                         className="h-32 object-contain mb-4 mix-blend-multiply" 
                     />
@@ -125,7 +129,7 @@ export default function PinGenerator() {
                 {/* RIGHT PHONE */}
                 <div className={`w-1/2 flex flex-col items-center justify-center p-4 ${winner === p2 ? 'bg-green-50/50' : ''}`}>
                     <img 
-                        src={p2.image || "https://placehold.co/200"} 
+                        src={p2.image} 
                         alt={p2.name}
                         className="h-32 object-contain mb-4 mix-blend-multiply" 
                     />
