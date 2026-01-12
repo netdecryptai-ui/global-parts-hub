@@ -41,7 +41,7 @@ export default async function ProductPage({ params }: Props) {
 
   // --- 💰 MONETIZATION & LINKS ENGINE 💰 ---
   // 👇 REPLACE THESE WITH YOUR REAL IDS!
-  const AMAZON_TAG = "your-store-20"; 
+  const AMAZON_TAG = "globalpartshu-20"; 
   const ALI_ID = "your-ali-id";       
 
   // Safe Math
